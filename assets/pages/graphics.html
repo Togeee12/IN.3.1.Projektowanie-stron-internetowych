@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/graphics.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css@master/dist/aqua.min.css"
+    />
+    <script src="../scripts/prism.js"></script>
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-introduction">
+        <div class="main-introduction-title">
+          Osadzenie grafiki na stronie internetowej
+        </div>
+        <div class="main-introduction-more">
+          Osadzanie grafiki na stronie HTML jest jednym z najważniejszych
+          elementów projektowania stron internetowych. Grafika, tak jak wideo i
+          audio, może przyciągnąć uwagę użytkowników i wzbogacić wizualną
+          prezentację strony. Umieszczenie grafiki na stronie HTML może także
+          pomóc w przekazywaniu informacji lub dodatkowo uzupełniać treść.
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content-title">
+          Osadzanie grafiki z plików maszyny (lokalnie)
+          <i class="fa fa-folder-open" aria-hidden="true"></i>
+        </div>
+        <hr />
+        <div class="main-content-under-title">JPEG</div>
+        <div class="main-content-under-title-description">
+          JPEG to skrót od Joint Photographic Experts Group, czyli organizacji
+          zajmującej się opracowywaniem standardu kompresji obrazów cyfrowych.
+          Format pliku JPEG jest powszechnie używany do przechowywania i
+          udostępniania zdjęć w Internecie i innych cyfrowych mediach.
+          Charakterystyczne cechy formatu JPEG to wysoka stopa kompresji, która
+          pozwala na zmniejszenie rozmiaru pliku bez większej utraty jakości
+          obrazu. JPEG umożliwia także wybór poziomu jakości kompresji, dzięki
+          czemu użytkownik może zdecydować, jak wiele szczegółów chce zachować w
+          swoim obrazie. Jednakże, istnieją też ograniczenia związane z formatem
+          JPEG. Wysoki poziom kompresji może prowadzić do utraty jakości,
+          szczególnie w obszarach o dużej zmienności kolorów i tonów. Format
+          JPEG nie nadaje się również do przechowywania obrazów o przejrzystości
+          alfa, takich jak logo i ikony, ponieważ nie obsługuje kanałów
+          przezroczystości.
+        </div>
+        <div class="main-content-video">
+          <img
+            src="../media/images/JPEG.jpg"
+            alt="JPEG - Panda Czerwona"
+            title="Panda Czerwona - JPEG"
+          />
+        </div>
+        <div class="main-content-code-container">
+          <div class="main-content-code-container-description">
+            Aby uzyskać powyższy efekt w HTML, należy umieścić poniższy kod:
+          </div>
+          <div class="main-content-code-container-code">
+            <pre>
+              <code id="code" class="language-html">
+                &lt;img
+            src="../media/images/JPEG.jpg"
+            alt="JPEG - Panda Czerwona"
+            title="Panda Czerwona - JPEG"
+          /&gt;
+              </code>
+            </pre>
+            <button id="copy-button">Copy</button>
+          </div>
+        </div>
+        <!-- 2 -->
+        <hr />
+        <div class="main-content-under-title">PNG</div>
+        <div class="main-content-under-title-description">
+          PNG to skrót od Portable Network Graphics, czyli formatu pliku
+          graficznego stosowanego do przechowywania obrazów i grafiki cyfrowej.
+          PNG został opracowany jako alternatywa dla formatu GIF, który miał
+          ograniczenia dotyczące liczby kolorów i nie obsługiwał
+          przezroczystości alfa. Charakterystyczne cechy formatu PNG to
+          możliwość przechowywania obrazów o przejrzystości alfa, co oznacza, że
+          mogą mieć one przezroczyste tło lub inne części z przezroczystością.
+          PNG także pozwala na przechowywanie obrazów z paletą kolorów RGB lub
+          RGBA, co pozwala na uzyskanie większej liczby kolorów niż w formacie
+          GIF. Inną ważną cechą formatu PNG jest to, że nie powoduje on straty
+          jakości obrazu w procesie zapisywania. Z tego powodu, PNG jest
+          popularny w projektowaniu stron internetowych, grafice komputerowej
+          oraz innych aplikacjach, w których zachowanie jakości obrazu jest
+          istotne. Jednakże, ze względu na większy rozmiar pliku w porównaniu do
+          formatu JPEG, PNG może być mniej efektywny w przechowywaniu zdjęć i
+          innych dużych obrazów.
+        </div>
+        <div class="main-content-video">
+          <img
+            src="../media/images/PNG.png"
+            alt="PNG - Meme"
+            title="Śmieszny obrazek - PNG"
+          />
+        </div>
+        <div class="main-content-code-container">
+          <div class="main-content-code-container-description">
+            Aby uzyskać powyższy efekt w HTML, należy umieścić poniższy kod:
+          </div>
+          <div class="main-content-code-container-code">
+            <pre>
+              <code id="code" class="language-html">
+                &lt;img
+            src="../media/images/PNG.png"
+            alt="PNG - Meme"
+            title="Śmieszny obrazek - PNG"
+          /&gt;
+              </code>
+            </pre>
+            <button id="copy-button">Copy</button>
+          </div>
+        </div>
+        <!-- 3 -->
+        <hr />
+        <div class="main-content-under-title">GIF</div>
+        <div class="main-content-under-title-description">
+          GIF to skrót od Graphics Interchange Format, czyli formatu pliku
+          graficznego, który został opracowany w celu przechowywania animacji i
+          krótkich fragmentów filmów. GIF jest stosowany na stronach
+          internetowych, w aplikacjach mobilnych oraz w mediach
+          społecznościowych jako sposób na przekazanie krótkiej animowanej
+          wiadomości lub humorystycznej grafiki. Charakterystyczną cechą formatu
+          GIF jest możliwość tworzenia animacji przez sekwencyjne wyświetlanie
+          kilku obrazów zapisanych w jednym pliku. GIF obsługuje także
+          przezroczystość, co pozwala na stworzenie grafik z tłem w kolorze lub
+          z całkowitą przezroczystością. Jednakże, GIF ma również pewne
+          ograniczenia, takie jak mała liczba kolorów, która może być użyta w
+          jednym pliku (do 256), co ogranicza jego zastosowanie w przypadku
+          bardziej skomplikowanych grafik lub zdjęć. Ponadto, GIF nie jest
+          idealny do przechowywania większych animacji lub fragmentów filmów,
+          ponieważ może prowadzić to do zbyt dużego rozmiaru pliku.
+        </div>
+        <div class="main-content-video">
+          <img
+            src="../media/images/giphy.gif"
+            alt="GIF - Endless Computer"
+            title="Endless Computer - GIF"
+          />
+        </div>
+        <div class="main-content-code-container">
+          <div class="main-content-code-container-description">
+            Aby uzyskać powyższy efekt w HTML, należy umieścić poniższy kod:
+          </div>
+          <div class="main-content-code-container-code">
+            <pre>
+              <code id="code" class="language-html">
+          &lt;img
+            src="../media/images/giphy.gif"
+            alt="GIF - Endless Computer"
+            title="Endless Computer - GIF"
+          /&gt;
+              </code>
+            </pre>
+            <button id="copy-button">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hold-container">
+      <div class="attributes">
+        <h2>Atrybuty img</h2>
+        <p>
+          Atrybuty img to specjalne cechy, które można przypisać do elementu
+          obrazu w celu określenia jego wyglądu, zachowania lub innych
+          właściwości. Poniżej przedstawiam najważniejsze atrybuty img oraz
+          możliwe wartości:
+        </p>
+
+        <ul>
+          <li>
+            <strong>src:</strong> określa adres URL obrazu; wartość to łańcuch
+            znaków
+          </li>
+          <li>
+            <strong>alt:</strong> określa alternatywny tekst, który ma być
+            wyświetlany, gdy obraz nie może być załadowany; wartość to łańcuch
+            znaków
+          </li>
+          <li>
+            <strong>width:</strong> określa szerokość obrazu; wartość to liczba
+            pikseli
+          </li>
+          <li>
+            <strong>height:</strong> określa wysokość obrazu; wartość to liczba
+            pikseli
+          </li>
+          <li>
+            <strong>title:</strong> określa tytuł obrazu, który jest
+            wyświetlany, gdy użytkownik najedzie na obraz myszą; wartość to
+            łańcuch znaków
+          </li>
+          <li>
+            <strong>loading:</strong> określa sposób ładowania obrazu; możliwe
+            wartości to "eager" (natychmiastowe ładowanie), "lazy" (opóźnione
+            ładowanie) lub "auto" (domyślnie, przeglądarka decyduje o tym, kiedy
+            należy załadować obraz)
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ========== Menu ========== -->
+    <div class="menu-container">
+      <input type="checkbox" id="burger-toggle" />
+      <label for="burger-toggle" class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+      <div class="menu">
+        <div class="menu-inner">
+          <ul class="menu-nav">
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="../../index.html">
+                <span>
+                  <div>Główna</div>
+                </span>
+              </a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="./video.html">
+                <span>
+                  <div>Wideo</div>
+                </span>
+              </a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="./audio.html">
+                <span>
+                  <div>Audio</div>
+                </span>
+              </a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="./graphics.html">
+                <span>
+                  <div>Grafika</div>
+                </span>
+              </a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="./maps.html">
+                <span>
+                  <div>Mapy</div>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div class="gallery">
+            <div class="title">
+              <hr />
+            </div>
+            <div class="images">
+              <a class="image-link" href="../../index.html">
+                <div class="image" data-label="Główna">
+                  <img
+                    src="../media/images/menu-pictures/Home.jpg"
+                    alt="Główna - Obraz"
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="./video.html">
+                <div class="image" data-label="Wideo">
+                  <img
+                    src="../media/images/menu-pictures/Video.jpg"
+                    alt="Wideo - Obraz"
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="./audio.html">
+                <div class="image" data-label="Audio">
+                  <img
+                    src="../media/images/menu-pictures/Audio.jpg"
+                    alt="Audio - Obraz"
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="./graphics.html">
+                <div class="image" data-label="Grafika">
+                  <img
+                    src="../media/images/menu-pictures/Graphics.png"
+                    alt="Grafika - Obraz"
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="./maps.html">
+                <div class="image" data-label="Mapy">
+                  <img
+                    src="../media/images/menu-pictures/Maps.jpg"
+                    alt="Mapy - Obraz"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Stanisław Szymczykowski - Osadzanie multimediów na stronach
+        internetowych
+      </p>
+    </footer>
+    <!-- ========== Menu END ========== -->
+  </body>
+</html>
