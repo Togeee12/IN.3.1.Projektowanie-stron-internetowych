@@ -1,46 +1,49 @@
-# IN.3.1.PSI-Orlicz
+# Strona z pracami - IN.3.1. Projektowanie stron internetowych
 
-IN.3.1.Projektowanie stron internetowych - Orlicz Prace
+Witaj na stronie z pracami dla przedmiotu "IN.3.1. Projektowanie stron internetowych"! Ta strona służy do prezentowania i udostępniania projektów związanych z tworzeniem stron internetowych.
 
-# Done:
+## Spis treści
 
-<!-- ! Done: -->
+- [Strona z pracami - IN.3.1. Projektowanie stron internetowych](#strona-z-pracami---in31-projektowanie-stron-internetowych)
+  - [Spis treści](#spis-treści)
+  - [Opis](#opis)
+  - [Wymagania](#wymagania)
+  - [Instrukcje](#instrukcje)
+  - [Struktura](#struktura)
+  - [Autorzy](#autorzy)
+  - [Licencja](#licencja)
 
-1. zmienić czcionkę na inną
-2. napisać że osadzenie na stronie internetowej 6.** Aby uzyskać powyższy efekt w HTML, należy umieścić poniższy kod.**
-3. osadzanie wideo -- animacja
-4. osadzenie wideo z internetu - film pełnometrażowy min.90 -- aktorski
+## Opis
 
-# TODO:
+Strona ta została stworzona jako miejsce, gdzie studenci mogą udostępniać swoje projekty, prezentować swoje umiejętności i zaprezentować efekty swojej pracy w ramach przedmiotu "IN.3.1. Projektowanie stron internetowych".
 
-## Index.html
+Celem strony jest umożliwienie studentom dzielenia się swoimi projektami, inspirowanie innych oraz budowanie społeczności zainteresowanej projektowaniem stron internetowych.
 
-1.  zmienić kolorystykę
-2.  dodać 2/3 zdania opis
-<!-- ! Done -->
+## Wymagania
 
-3.  dokończyć menu
+Aby korzystać z tej strony, nie ma żadnych specjalnych wymagań. Wystarczy mieć dostęp do przeglądarki internetowej i połączenie z internetem.
 
-## Audio.html
+## Instrukcje
 
-1. Napisać o width i height i ogólnie o atrybutach znacznika audio oraz za co odpowiadają
-2. Brakuje audio --> audio z internetu w tej samej formie (odtwarzacz audio)
-3. 4 pliki audio
+1. Sklonuj lub pobierz repozytorium na swoje urządzenie.
+2. Otwórz plik `index.html` w przeglądarce internetowej.
+3. Przeglądaj projekty, klikając na odpowiednie linki lub przyciski.
+4. Zachęcamy do dodawania nowych projektów poprzez wykonanie fork-a tego repozytorium, a następnie utworzenie nowego brancha i dodanie swoich zmian. Następnie możesz złożyć żądanie wprowadzenia zmian (pull request).
 
-## Video.html
+## Struktura
 
-1. Napisać, że jak nie widać elementów sterujących to prawy - ctrl
+- `index.html` - główny plik strony
+- `styles.css` - arkusz stylów CSS
+- `assets/` - folder zawierający pliki graficzne i inne zasoby
 
-## Graphics
+## Autorzy
 
-1. Zdjęcia jednakowej wielkości
-2. Pierwszy JPEG i jego opis potem PNG i jego opis, potem GIF i jego opis,
-3. dodać Title wszędzie
-<!-- ! Done -->
-4. Atrybuty zdjęcia
+Ta strona została stworzona przez studentów przedmiotu "IN.3.1. Projektowanie stron internetowych". Poniżej znajduje się lista autorów:
 
-## Mapy
+- Stanisława Szymczykowskiego - @Togeee12 - stach.szymczykowski@gmail.com
 
-1. Droga między dużymi obiektami pieszo w mieście, 3 - rowerem od teoretycznego domu do szkoły na rowerze, 4 - jedna pinezka - charakterystyczny obiekt, 5 - technikum elektroniczne nr.1 w wa
+Jeśli chciałbyś dołączyć do listy autorów, wystarczy dodać swój login, nazwisko i adres e-mail.
 
-2. Ujednolicenie wielkości kodu
+## Licencja
+
+Ten projekt jest udostępniany na licencji [MIT](LICENSE).
