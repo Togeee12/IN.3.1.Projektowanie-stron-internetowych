@@ -1,0 +1,144 @@
+@import "../menu/menu.css";
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+}
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.contact-form button[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button[type=submit]:hover {
+  background-color: #0056b3;
+}
+.contact-form span {
+  color: #ff0000;
+}
+
+.popup {
+  display: none;
+  position: relative;
+  top: 2vh;
+  margin: 0 auto;
+  width: 50vh;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  animation: glowing 2s ease-in-out infinite;
+}
+.popup p {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+.popup button#closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ff0000;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #ff0000, 0 0 20px #ff0000;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff0000, 0 0 20px #ff0000;
+  }
+}
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .personal-info {
+    flex-direction: row;
+  }
+}
+.personal-info h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.personal-info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.personal-info .contact-details {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .personal-info .contact-details {
+    margin-top: 0;
+    margin-left: 40px;
+    flex-direction: row;
+  }
+}
+.personal-info .contact-details .contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .personal-info .contact-details .contact-item {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+}
+.personal-info .contact-details .contact-item i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.personal-info .contact-details .contact-item span {
+  font-size: 18px;
+}
+.personal-info .contact-details .contact-item:hover {
+  transform: translateY(-3px);
+  transition: transform 0.2s;
+}/*# sourceMappingURL=kontakt.css.map */

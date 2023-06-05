@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.ico"
+      type="image/x-icon"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Skrypty -->
+    <script defer src=""></script>
+    <title>Globetrek</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="./index.html" class="logo">Globetrek</a>
+      <ul>
+        <li><a href="./index.html" class="active">Strona Główna</a></li>
+        <li><a href="./assets/pages/about.html">O nas</a></li>
+        <li><a href="./main.html">Logowanie</a></li>
+      </ul>
+    </header>
+
+    <section>
+      <h2 id="text"><span>Czas na nową </span><br />Przygodę</h2>
+      <img src="./assets/img/ptak_lewo.png" id="bird1" />
+      <img src="./assets/img/ptak_prawo.png" id="bird2" />
+      <img src="./assets/img/background.png" id="forest" />
+      <a href="#" id="btn">Odkrywaj</a>
+      <img src="./assets/img/skaly.png" id="rocks" />
+      <img src="./assets/img/woda.png " id="water" />
+    </section>
+    <!-- UnderMenu Content -->
+    <div class="sec">
+      <div class="container">
+        <div class="left-side-text">
+          <h2>Hiszpania</h2>
+          <p>
+            Majorka, Ibiza, Teneryfa, Lanzarote - te najpopularniejsze
+            hiszpańskie kurorty brzmią jak obietnica udanych, słonecznych
+            wakacji. Turystów z różnych stron świata zachwycą przepięknymi
+            plażami, ciepłym morzem oraz gorącą atmosferą tańca i zabawy.
+          </p>
+          <button href="./main.html">Więcej...</button>
+        </div>
+        <div class="right-side-photo">
+          <img src="./assets/img/hiszpania.jpg" alt="Krajobraz hiszpania" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="left-side-text">
+          <h2>Grecja</h2>
+          <p>
+            Przejrzysta woda, czyste, piaszczyste plaże, piękne widoki na
+            bielone budynki i nutka historii - Grecja zdecydowanie jest
+            doskonałym miejscem na relaksujące wakacje! Co jednak wybrać: Grecję
+            kontynentalną, a może Kretę, Santorini Zakynthos lub Rodos?
+          </p>
+          <button href="./main.html">Więcej...</button>
+        </div>
+        <div class="right-side-photo">
+          <img src="./assets/img/grecja.jpg" alt="Krajobraz Grecja" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="left-side-text">
+          <h2>Bułgaria</h2>
+          <p>
+            Na turystów wybierających się na wakacje do Bułgarii czekają
+            luksusowe kurorty i urokliwe miasta, zabytki klasy światowej,
+            smaczna kuchnia i przyjaźni mieszkańcy. Piaszczyste plaże i ciepła
+            woda zachęcają do plażowania. Tutaj naprawdę można wypocząć.
+          </p>
+          <button href="./main.html">Więcej...</button>
+        </div>
+        <div class="right-side-photo">
+          <img src="./assets/img/bulgaria.jpg" alt="Krajobraz Bułgaria" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="left-side-text">
+          <h2>Turcja</h2>
+          <p>
+            Turcja jest spełnieniem marzeń o udanych wakacjach dla całej
+            rodziny. Ciesz się kilometrami piaszczystych plaż, luksusowymi
+            hotelami, niezwykle bogatą formułą all inclusive i piękną pogodą
+            niemal przez cały rok. Zapraszamy na wakacje z nutą orientu.
+          </p>
+          <button href="./main.html">Więcej...</button>
+        </div>
+        <div class="right-side-photo">
+          <img src="./assets/img/turcja.jpg" alt="Krajobraz Turcja" />
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+    <!-- Skrypt odpowiedzialny za animację ptaków, gór i wody -->
+    <script>
+      let text = document.getElementById("text");
+      let bird1 = document.getElementById("bird1");
+      let bird2 = document.getElementById("bird2");
+      let btn = document.getElementById("btn");
+      let rocks = document.getElementById("rocks");
+      let forest = document.getElementById("forest");
+      let water = document.getElementById("water");
+      let header = document.getElementById("header");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        text.style.top = 50 + value * -0.1 + "%";
+        bird2.style.top = value * -1.5 + "px";
+        bird2.style.left = value * 2 + "px";
+        bird1.style.top = value * -1.5 + "px";
+        bird1.style.left = value * -5 + "px";
+        btn.style.marginTop = value * 1.5 + "px";
+        rocks.style.top = value * -0.12 + "px";
+        forest.style.top = value * 0.25 + "px";
+        header.style.top = value * 0.5 + "px";
+      });
+    </script>
+  </body>
+</html>
