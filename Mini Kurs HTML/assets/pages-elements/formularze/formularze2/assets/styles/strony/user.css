@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import "./menu.css";
+
+:root {
+  --primary: #094b65;
+}
+
+body {
+  background: var(--primary);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Strona CSS  */
+.content-main {
+  margin: 80px 20px;
+  text-align: center;
+}
+
+.containter-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.left {
+  width: calc(33.33% - 10px);
+  height: 200px;
+}
+
+.left img {
+  width: 200px;
+}
+
+.right {
+  width: calc(66.67% - 10px);
+  height: 200px;
+}
+.user-data {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.edit-form {
+  display: none;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.edit-form label,
+.edit-form input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-form button {
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-column {
+  width: 45%;
+}
+
+.right-column {
+  width: 45%;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+select {
+  cursor: pointer;
+}
+
+.submit {
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 25px;
+  border-radius: 20px;
+  border: 1px #fff solid;
+  background-color: transparent;
+  color: #fff;
+}
+
+.submit:hover {
+  color: var(--primary);
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}

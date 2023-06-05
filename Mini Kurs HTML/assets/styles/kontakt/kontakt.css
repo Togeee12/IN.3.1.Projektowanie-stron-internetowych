@@ -1,0 +1,53 @@
+@import "../menu/menu.css";
+.container {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+.container form {
+  background: white;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 5px;
+}
+.container form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container form .form-group {
+  margin-bottom: 20px;
+}
+.container form .form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.container form .form-group input,
+.container form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  min-width: 500px;
+  max-width: 1080px;
+}
+.container form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.container form .error-message {
+  color: #ff0000;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}/*# sourceMappingURL=kontakt.css.map */

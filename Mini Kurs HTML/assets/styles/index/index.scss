@@ -1,0 +1,19 @@
+// Import stylów menu
+@import "../menu/menu.css";
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1, span {
+    margin: 0 auto;
+      text-align: center;
+
+  }
+
+  span {
+    display: inline-block;
+    width: 85vh;
+  }
+}
