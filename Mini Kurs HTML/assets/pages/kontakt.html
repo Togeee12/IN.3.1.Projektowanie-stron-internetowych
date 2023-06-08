@@ -27,10 +27,11 @@
                 <i class="fa fa-html5" aria-hidden="true"></i>
               </div>
               <h5>
-                Mini Kurs -
-                <i class="fa fa-html5" aria-hidden="true">
-                  <i class="fa fa-css3" aria-hidden="true"></i
-                ></i>
+                <a href="../../index.html">
+                  MiniKurs -
+                  <i class="fa fa-html5" aria-hidden="true">
+                    <i class="fa fa-css3" aria-hidden="true"></i></i
+                ></a>
               </h5>
             </div>
           </div>
@@ -49,7 +50,7 @@
                   <div class="sub-menu-list">
                     <ul>
                       <li class="menu-item">
-                        <a href="./assets/pages-elements/sprawdzian/index.html">
+                        <a href="../pages-elements/sprawdzian/index.html">
                           <span class="menu-title">Nowe Okno</span>
                         </a>
                       </li>
@@ -239,47 +240,66 @@
       <div class="layout">
         <main class="content">
           <div class="container">
-            <div class="info">
-              <div class="name">Stanisław Szymczykowski</div>
-              <div class="address">Piaskowa 9</div>
-              <div class="email">stach.szymczykowski@gmail.com</div>
+            <div class="box">
+              <h2>Moje dane:</h2>
+              <p><span>Imię i Nazwisko: </span>Stanisław Szymczykowski</p>
+              <p><span>Adres: </span><a href="">Piaskowa 9</a></p>
+              <p>
+                <span>Tel: </span
+                ><a
+                  href="tel:132456798"
+                  title="Telefon kontaktowy"
+                  target="_blank"
+                  >123 465 798</a
+                >
+              </p>
+              <p>
+                <span>Email: </span
+                ><a
+                  href="mailto:stach.szymczykowski@gmail.com"
+                  title="Email kontaktowy"
+                  target="_blank"
+                  >stach.szymczykowski@gmail.com</a
+                >
+              </p>
+              <p>
+                <span>Szkoła: </span
+                ><a
+                  href="https://kasprzak.edu.pl/"
+                  target="_blank"
+                  title="Strona Internetowa Szkoły"
+                  >Technikum Elektroniczne nr 1 im. Marcina Kasprzaka</a
+                >
+              </p>
+              <p><span>Klasa: </span>3G</p>
+            </div>
+            <div class="box">
+              <form>
+                <h2>Napisz do mnie!</h2>
+                <label for="name">Imię i nazwisko: </label>
+                <input type="text" name="name" id="name" />
+                <label for="email">Email: </label>
+                <input type="email" name="Email" id="email" />
+                <label for="message">Wiadomość: </label>
+                <input type="text" name="message" id="message" />
+                <button type="submit">Wyślij</button>
+              </form>
             </div>
           </div>
-          <div class="container">
-            <form id="contact-form" method="post" action="">
-              <h1>Kontakt</h1>
-              <div class="form-group">
-                <label for="name">Imię:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Twoje imię:"
-                />
-                <span class="error-message" id="name-error"></span>
-              </div>
-              <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Twój adres E-mail:"
-                />
-                <span class="error-message" id="email-error"></span>
-              </div>
-              <div class="form-group">
-                <label for="message">Wiadomość:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Twoja wiadomość:"
-                ></textarea>
-              </div>
-              <button type="submit">Wyślij</button>
-            </form>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2442.306315431816!2d20.9737071!3d52.2559824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb0ace5a594b%3A0x230aec6748612337!2sPiaskowa%209!5e0!3m2!1spl!2spl!4v1686133844737!5m2!1spl!2spl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
 
+          <!-- Video gallery -->
+          <div class="video-container"></div>
           <!-- Footer -->
           <footer class="footer">
             <a target="_blank" href="https://github.com/togeee12">

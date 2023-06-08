@@ -1,38 +1,3 @@
-// Formularz kontaktowy
-const form = document.getElementById("contact-form");
-const emailInput = document.getElementById("email");
-const emailError = document.getElementById("email-error");
-const nameInput = document.getElementById("name");
-const nameError = document.getElementById("name-error");
-const messageInput = document.getElementById("message");
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  if (!validateEmail(emailInput.value)) {
-    emailError.textContent = "Niepoprawny adres e-mail.";
-  } else if (nameInput.value === "") {
-    nameError.textContent = "Proszę uzupełnić imię i nazwisko!";
-  }
-  {
-    emailError.textContent = "";
-    alert(
-      "Ten formularz to test! Wprowadzone dane które zostałyby przekazane do użytkownika:" +
-        " Email: " +
-        emailInput.value +
-        " Imię i Nazwisko: " +
-        nameInput.value +
-        " Wiadomość: " +
-        messageInput.value
-    );
-  }
-});
-
-function validateEmail(email) {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(email);
-}
-
-// Menu
-
 const ANIMATION_DURATION = 300;
 
 const SIDEBAR_EL = document.getElementById("sidebar");

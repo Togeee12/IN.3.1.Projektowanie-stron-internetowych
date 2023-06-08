@@ -1,5 +1,11 @@
 // Import stylów menu
 @import "../menu/menu.css";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -8,12 +14,43 @@
 
   h1, span {
     margin: 0 auto;
-      text-align: center;
-
+    text-align: center;
   }
 
+  h1 {
+    font-size: 2.2rem;
+  }
   span {
     display: inline-block;
     width: 85vh;
+    font-size: 1.2rem;
   }
+
+  .html-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    h2 {
+      text-align: center;
+      color: #ffff;
+      font-size: 1.4rem;
+    }
+
+    p {
+      line-height: 1cap;
+      font-size: 1rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+  }
+}
+
+
+.video-container {
+  width: 800px;
+  height: auto;
 }

@@ -1,4 +1,9 @@
 @import "../menu/menu.css";
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -9,7 +14,35 @@
   margin: 0 auto;
   text-align: center;
 }
+.container h1 {
+  font-size: 2.2rem;
+}
 .container span {
   display: inline-block;
   width: 85vh;
+  font-size: 1.2rem;
+}
+.container .html-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+}
+.container .html-info-container h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+}
+.container .html-info-container p {
+  line-height: 1cap;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video-container {
+  width: 800px;
+  height: auto;
 }/*# sourceMappingURL=index.css.map */

@@ -1,60 +1,92 @@
 @import "../menu/menu.css";
+$main-font-color: #000000;
+$form-background-color: #f2f2f2;
+$form-font-color: #333;
+$form-input-background-color: #fff;
+$form-input-border-color: #ccc;
+$form-input-font-color: #555;
+$form-input-focus-border-color: #999;
+$form-button-background-color: #1d4981;
+$form-button-font-color: #fff;
 
 .container {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: top;
+  flex-direction: row;
 
-  form {
-    background: #ffff;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    border-radius: 5px;
-    h1 {
+  .box {
+    flex: 1;
+    margin: 20px;
+    background-color: $form-input-background-color;
+    color: $main-font-color;
+    padding: 20px;
+    border-radius: 25px;
+    h2 {
       text-align: center;
-      margin-bottom: 20px;
+      margin: 0;
+      font-size: 1.8rem;
+      color: $form-font-color;
     }
-
-    .form-group {
-      margin-bottom: 20px;
-
-      label {
-        display: block;
+    a {
+      color: $main-font-color;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    p {
+      color: $main-font-color;
+      font-size: 1rem;
+      span {
         font-weight: 600;
-        margin-bottom: 5px;
-      }
-
-      input,
-      textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        min-width: 500px;
-        max-width: 1080px;
       }
     }
 
-    button {
-      background-color: #4caf50;
-      color: white;
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: $form-font-color;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid $form-input-border-color;
+      border-radius: 4px;
+      background-color: $form-input-background-color;
+      color: $form-input-font-color;
+
+      &:focus {
+        border-color: $form-input-focus-border-color;
+      }
+    }
+
+    button[type="submit"] {
+      margin: 0 auto;
+      background-color: $form-button-background-color;
+      color: $form-button-font-color;
       border: none;
       padding: 10px 20px;
-      border-radius: 3px;
+      border-radius: 4px;
       cursor: pointer;
-    }
-
-    .error-message {
-      color: #ff0000;
-      font-size: 12px;
+      font-size: 16px;
+      margin: 0 auto;
       display: block;
-      margin-top: 5px;
+
+      &:hover {
+        background-color: #478fee;
+      }
     }
+  }
+}
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  iframe {
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
   }
 }
