@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pl, en">
+  <!-- Zmiany dodane od ostatniej pracy:
+	- uporządkowanie kodu 
+	- dodanie 3 nowych kolorów 
+	- dodanie przycisku powrotu na samą górę
+	- Footer pokazuje styl linków 
+	- Zmiana rozdzielenia 2 źródeł
+	- poprawiono kolor purpurowy
+	- zmiania koloru w tabeli tam gdzie są ciemne kolory
+	- dodano stronę na moją domenę - togeee12.cloud
+	- zmiana foootera na wskazane znaki oraz zwiększenie czcionki
+	- link do maila autora zostaje tylko przy imieniu i nazwisku
+	-->
+
+  <head>
+    <title>Tabela z kolorami Stanisław Szymczykowski 3G</title>
+    <meta charset="utf8" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+    table a:hover {
+      font-weight: 1000;
+    }
+
+    .textFooter:hover {
+      font-weight: 1000;
+    }
+
+    body {
+      background: linear-gradient(
+        -45deg,
+        #810a8b,
+        #df0fa0,
+        #26c9c1,
+        #1982c4,
+        #6a4c93
+      );
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .Title {
+      text-align: center;
+      color: white;
+      font-size: 45px;
+    }
+
+    .boldOnHover {
+      align-items: center;
+      text-decoration: none;
+      font-size: 15pt;
+      text-align: center;
+      border-width: 2px;
+      border-collapse: collapse;
+    }
+
+    .linki {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+    }
+
+    .linki1 {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
+
+    .textFooter {
+      color: rgb(255, 255, 255);
+      font-size: 25px;
+    }
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+
+  <body>
+    <h1 class="Title">Tabela z kolorami</h1>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div align="center">
+      <table class="boldOnHover" cellpadding="1" cellspacing="1" border="black">
+        <tr bordercolor="black" class="linki">
+          <td colspan="2" rowspan="3" bgcolor="#f00">
+            <a
+              href="https://en.wikipedia.org/wiki/Red"
+              class="linki1"
+              target="_blank"
+              >RED</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_czerwona"
+              class="linki1"
+              target="_blank"
+              >[czerwony]</a
+            ><br />
+            <div class="linki1">
+              #FF0000<br />
+              RGB (255, 0, 0)
+            </div>
+          </td>
+          <td height="200pt" width="200pt" bgcolor="#ff0">
+            <a
+              href="https://en.wikipedia.org/wiki/Yellow"
+              class="linki"
+              target="_blank"
+              >YELLOW</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_%C5%BC%C3%B3%C5%82ta"
+              class="linki"
+              target="_blank"
+              >[żółty]</a
+            ><br />
+            #FFFF00<br />
+            RGB (255, 255, 0)
+          </td>
+          <td height="200" width="200" bgcolor="#00f" style="color: white">
+            <a
+              href="https://en.wikipedia.org/wiki/Blue"
+              class="linki1"
+              target="_blank"
+              >BLUE</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_niebieska"
+              class="linki1"
+              target="_blank"
+              >[niebieski]</a
+            ><br />
+            <div class="linki1">
+              #0000FF<br />
+              RGB (0, 0, 255)
+            </div>
+          </td>
+          <td height="200" width="200" bgcolor="#008000" style="color: white">
+            <a
+              href="https://en.wikipedia.org/wiki/Green"
+              class="linki1"
+              target="_blank"
+              >GREEN</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_zielona"
+              class="linki1"
+              target="_blank"
+              >[zielony]</a
+            ><br />
+            <div class="linki1">
+              #008000<br />
+              RGB (0, 128, 0)
+            </div>
+          </td>
+          <td rowspan="2" height="200" width="200" bgcolor="#FFD700">
+            <a
+              href="https://en.wikipedia.org/wiki/Gold_(color)#Gold"
+              class="linki"
+              target="_blank"
+              >GOLD</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_z%C5%82ota"
+              class="linki"
+              target="_blank"
+              >[złoty]</a
+            ><br />
+            <div class="linki">
+              #FFF700<br />
+              RGB (255, 215, 0)
+            </div>
+          </td>
+        </tr>
+        <tr class="linki">
+          <td colspan="2" height="200" width="200" bgcolor="#c0c0c0">
+            <a
+              href="https://en.wikipedia.org/wiki/Silver_(color)"
+              class="linki"
+              target="_blank"
+              >SILVER</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_srebrna"
+              class="linki"
+              target="_blank"
+              >[srebrny]</a
+            ><br />
+            <div class="linki">
+              #C0C0C0<br />
+              RGB (192, 192, 192)
+            </div>
+          </td>
+          <td height="200" width="200" bgcolor="#808080" style="color: white">
+            <a
+              href="https://en.wikipedia.org/wiki/Shades_of_gray#Gray"
+              class="linki1"
+              target="_blank"
+              >GREY</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_szara"
+              class="linki1"
+              target="_blank"
+              >[szary]</a
+            ><br />
+            <div class="linki1">
+              #808080<br />
+              RGB (128, 128, 128)
+            </div>
+          </td>
+        </tr>
+        <tr class="linki">
+          <td height="200" width="200" bgcolor="#800000" style="color: white">
+            <a
+              href="https://en.wikipedia.org/wiki/Maroon"
+              class="linki1"
+              target="_blank"
+              >MAROON</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_kasztanowa"
+              class="linki1"
+              target="_blank"
+              >[kasztanowy]</a
+            ><br />
+            <div class="linki1">
+              #800000<br />
+              RGB (128, 0, 0)
+            </div>
+          </td>
+          <td
+            colspan="3"
+            rowspan="2"
+            height="200"
+            width="200"
+            bgcolor="#800080"
+            class="linki"
+            target="_blank"
+          >
+            <a
+              href="https://en.wikipedia.org/wiki/Purple"
+              class="linki1"
+              target="_blank"
+              >PURPLE</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_purpurowa"
+              class="linki1"
+              target="_blank"
+              >[purpurowy]</a
+            ><br />
+            <div class="linki1">
+              #800080<br />
+              RGB (128, 0, 128)
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td height="200" width="200" bgcolor="#f0f" style="color: white">
+            <a
+              href="https://en.wikipedia.org/wiki/Fuchsia_(color)"
+              class="linki1"
+              target="_blank"
+              >FUCHSIA</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Fuksja_(kolor)"
+              class="linki1"
+              target="_blank"
+              >[fuksjowy]</a
+            ><br />
+            <div class="linki1">
+              #FF00FF<br />
+              RGB (255, 0, 255)
+            </div>
+          </td>
+          <td height="200" width="200" bgcolor="#0f0">
+            <a
+              href="https://en.wikipedia.org/wiki/Lime_(color)"
+              class="linki"
+              target="_blank"
+              >LIME</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_limonkowa"
+              class="linki"
+              target="_blank"
+              >[limonkowy]</a
+            ><br />
+            <div class="linki">
+              #00FF00<br />
+              RGB (0, 255, 0)
+            </div>
+          </td>
+          <td height="200" width="200" bgcolor="#0ff">
+            <a
+              href="https://en.wikipedia.org/wiki/Cyan"
+              class="linki"
+              target="_blank"
+              >CYAN</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Cyjan_(kolor)"
+              class="linki"
+              target="_blank"
+              >[cyjanowy]</a
+            ><br />
+            <div class="linki">
+              #00FFFF<br />
+              RGB (0, 255, 255)
+            </div>
+          </td>
+        </tr>
+        <tr class="linki">
+          <td
+            colspan="6"
+            height="200"
+            width="200"
+            bgcolor="#008080"
+            style="color: white"
+          >
+            <a
+              href="https://en.wikipedia.org/wiki/Teal"
+              class="linki1"
+              target="_blank"
+              >TEAL</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_morska"
+              class="linki1"
+              target="_blank"
+              >[morski]</a
+            ><br />
+            <div class="linki1">
+              #008080<br />
+              RGB (0, 128, 128)
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td
+            colspan="3"
+            height="200"
+            width="200"
+            bgcolor="#FFFFFF"
+            style="color: white"
+          >
+            <a
+              href="https://en.wikipedia.org/wiki/white"
+              class="linki"
+              target="_blank"
+              >WHITE</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_bia%C5%82a"
+              class="linki"
+              target="_blank"
+              >[biały]</a
+            ><br />
+            <div class="linki">
+              #FFFFFF<br />
+              RGB (255, 255, 255)
+            </div>
+          </td>
+          <td
+            colspan="1"
+            height="200"
+            width="200"
+            bgcolor="#FFA500"
+            style="color: white"
+          >
+            <a
+              href="https://en.wikipedia.org/wiki/Orange_(colour)"
+              class="linki"
+              target="_blank"
+              >ORANGE</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_pomara%C5%84czowa"
+              class="linki"
+              target="_blank"
+              >[pomarańczowy]</a
+            ><br />
+            <div class="linki">
+              #FFA500<br />
+              RGB (255, 165, 0)
+            </div>
+          </td>
+          <td
+            colspan="2"
+            height="200"
+            width="200"
+            bgcolor="#FFCCDD"
+            style="color: white"
+          >
+            <a
+              href="https://en.wikipedia.org/wiki/Pink"
+              class="linki"
+              target="_blank"
+              >PINK</a
+            ><br />
+            <a
+              href="https://pl.wikipedia.org/wiki/Barwa_r%C3%B3%C5%BCowa"
+              class="linki"
+              target="_blank"
+              >[różowy]</a
+            ><br />
+            <div class="linki">
+              #FFCCDD<br />
+              RGB (255, 204, 221)
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <footer align="center">
+      <br />
+      <a
+        class="textFooter"
+        target="_blank"
+        href="https://en.wikipedia.org/wiki/List_of_colors_(compact)"
+        >Źródło 1</a
+      >
+      <a class="textFooter">— </a>
+      <a
+        class="textFooter"
+        target="_blank"
+        href="https://pl.wikipedia.org/wiki/Lista_kolor%C3%B3w"
+      >
+        Źródło 2</a
+      >
+      <br />
+      <a class="textFooter">Autor: &copy;</a
+      ><a
+        class="textFooter"
+        href="mailto:stach.szymczykowski@gmail.com"
+        style="text-decoration: none"
+      >
+        Stanisław Szymczykowski 3G</a
+      >
+      <br /><br />
+    </footer>
+    <script>
+      //Otrzymywanie przycisku
+      let mybutton = document.getElementById("myBtn");
+      //Tworzenie fukncji która pokazuje przycisk po tym gdy użytkownik zescrolluje 5px
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // Kiedy użytkownik naciska przycisk, funkcja scrolluje na górę ekarnu.
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>

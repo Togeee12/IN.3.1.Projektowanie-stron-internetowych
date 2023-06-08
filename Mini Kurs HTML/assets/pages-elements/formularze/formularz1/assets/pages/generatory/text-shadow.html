@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link
+      rel="stylesheet"
+      href="../../styles/strony/generatory/text-shadow.css"
+    />
+    <!-- Skrypty -->
+    <script defer src="../../scripts/strony/generatory/text-shadow.js"></script>
+    <title>CSS GENERATOR - TEXT SHADOW</title>
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li>
+          <a href="">
+            <h3 class="User"></h3>
+            <span class="Email"></span>
+          </a>
+        </li>
+        <li><a href="../dashboard.html">Główna</a></li>
+        <li><a href="../generatory.html">Generatory</a></li>
+        <li><a href="">Źródła</a></li>
+      </ul>
+    </div>
+    <div class="logout-btn">
+      <button>Wyloguj</button>
+    </div>
+
+    <!-- Strona -->
+    <div class="main">
+      <input type="text" id="input-text" placeholder="Wprowadź tutaj tekst" />
+      <div id="text-shadow">Tutaj pojawi się twój tekst</div>
+      <div id="options-container">
+        <div>
+          <label for="h-shadow">Cień poziomy:</label>
+          <input
+            type="range"
+            id="h-shadow"
+            min="-10"
+            max="10"
+            step="1"
+            value="2"
+          />
+        </div>
+        <div>
+          <label for="v-shadow">Cień pionowy:</label>
+          <input
+            type="range"
+            id="v-shadow"
+            min="-10"
+            max="10"
+            step="1"
+            value="2"
+          />
+        </div>
+        <div>
+          <label for="blur">Rozmycie:</label>
+          <input type="range" id="blur" min="0" max="10" step="1" value="4" />
+        </div>
+        <div>
+          <label for="color">Kolor:</label>
+          <input type="color" id="color" value="#000000" />
+        </div>
+      </div>
+      <div class="box-under">
+        <div id="buttons-container">
+          <button class="copy-code" id="copy-button">Kopiuj</button>
+          <button class="copy-code" id="reset-button">Reset</button>
+        </div>
+        <label class="code-label" for="code">Code: </label>
+        <textarea id="css-code" readonly></textarea>
+      </div>
+    </div>
+  </body>
+</html>

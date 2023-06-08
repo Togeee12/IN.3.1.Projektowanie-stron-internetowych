@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link rel="stylesheet" href="../../styles/strony/generatory/flexbox.css" />
+    <!-- Skrypty -->
+    <script defer src="../../scripts/strony/generatory/flexbox.js"></script>
+    <title>CSS GENERATOR - FLEXBOX</title>
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li>
+          <a href="">
+            <h3 class="User"></h3>
+            <span class="Email"></span>
+          </a>
+        </li>
+        <li><a href="../dashboard.html">Główna</a></li>
+        <li><a href="../generatory.html">Generatory</a></li>
+        <li><a href="">Źródła</a></li>
+      </ul>
+    </div>
+    <div class="logout-btn">
+      <button>Wyloguj</button>
+    </div>
+
+    <!-- Strona -->
+    <div class="main">
+      <h1>Flexbox Generator</h1>
+      <form id="flexbox-form">
+        <label>Flex Container:</label>
+        <div>
+          <label>
+            <input type="radio" name="flex-direction" value="row" checked /> Rząd
+          </label>
+          <label>
+            <input type="radio" name="flex-direction" value="column" /> Kolumna
+          </label>
+        </div>
+        <label>Justify Content:</label>
+        <select name="justify-content">
+          <option value="flex-start" selected>Flex Start</option>
+          <option value="flex-end">Flex End</option>
+          <option value="center">Center</option>
+          <option value="space-between">Space Between</option>
+          <option value="space-around">Space Around</option>
+        </select>
+        <label>Align Items:</label>
+        <select name="align-items">
+          <option value="flex-start" selected>Flex Start</option>
+          <option value="flex-end">Flex End</option>
+          <option value="center">Center</option>
+          <option value="baseline">Baseline</option>
+          <option value="stretch">Stretch</option>
+        </select>
+        <label>Flex Wrap:</label>
+        <div>
+          <label>
+            <input type="checkbox" name="flex-wrap" value="wrap" /> Wrap
+          </label>
+        </div>
+        <label>Align Content:</label>
+        <select name="align-content">
+          <option value="flex-start" selected>Flex Start</option>
+          <option value="flex-end">Flex End</option>
+          <option value="center">Center</option>
+          <option value="space-between">Space Between</option>
+          <option value="space-around">Space Around</option>
+          <option value="stretch">Stretch</option>
+        </select>
+        <button type="button" onclick="generateCode()">Generuj</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+      </form>
+      <textarea id="code-area" readonly></textarea>
+    </div>
+  </body>
+</html>

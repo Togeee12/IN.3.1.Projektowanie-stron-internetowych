@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+:root {
+  --transition: 0.40s;
+font-family: 'Fira Sans', sans-serif !important;
+}
+body {
+  margin: 0;
+  font-size: 26px;
+  z-index: -1000;
+  background-color: #181B18;
+}
+a {
+  color: #f4f4f4;
+  background-color: #17291d;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+ol li {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+img {
+  width: 400px;
+  height: auto;
+  align-self: center;
+  border-radius: 15px;
+  display: block;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+ul {
+  color: #ffffff;
+}
+#UprawaRolna{
+  font-size: 22pt;
+}
+#ChowZwierzat{
+  font-size: 22pt;
+
+}
+#Sadownictwo{
+  font-size: 22pt;
+
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #f4f4f4;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #0099ff;
+}
+.main {
+  padding-top: 90px;
+  height: 100%;
+  color: #f4f4f4;
+  width: 66%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.opis {
+  font-size: 17pt;
+}
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+.endtypeLi {
+  list-style: upper-alpha;
+  color: #95d8e0;
+  font-size: 20pt;
+}
+.endtypeLi ul li {
+  list-style: disc;
+}
+.typeLi{
+  color: #0099ff;
+}
+.upperOpis{
+  text-align: justify;
+}
+.accordion {
+  background-color: #26352A;
+  color: #f4f4f4;  
+  cursor: pointer;
+  padding: 18px;
+  width: 25%;
+  font-family: 'Fira Sans', sans-serif !important;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.active,
+.accordion:hover {
+  background-color: #17211A;
+}
+
+.panel {
+  margin: 5px;
+  padding:0 18px;
+  background-color: #17211A;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 15pt;
+  border-radius: 20px;
+  transition: max-height 0.2s ease-out;
+}
+
+
+/* header */
+
+.header {
+  background-color: #17291d;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  font-size: 1em;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #17291d;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #17291d;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #0e341c;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked~.menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+.footer {
+  display: block;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  background-color: #17291d;
+  color: #f4f4f4;
+}
+
+.span-footerL{
+  float: left;
+}
+.span-footerR{
+float: right;
+
+}
+
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+}
+

@@ -1,3 +1,27 @@
+// Formularz kontaktowy
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("myForm");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Message:", message);
+    const alertMessage = `ŻADNA WIADOMOŚĆ NIE ZOSTAŁA WYSŁANA!\nTo jest jedynie przykład!\nImię i Nazwisko: ${name}\nEmail: ${email}\nWiadomość: ${message}`;
+    if (name == "" || email == "" || message == "") {
+      alert("Proszę uzupełnić wszystkie pola!");
+    } else {
+      alert(alertMessage);
+      form.reset();
+    }
+  });
+});
+// Menu
 const ANIMATION_DURATION = 300;
 
 const SIDEBAR_EL = document.getElementById("sidebar");

@@ -22,9 +22,10 @@ body {
   }
   span {
     display: inline-block;
-    width: 85vh;
+    width: 85%;
     font-size: 1.2rem;
   }
+
 
   .html-info-container{
     display: flex;
@@ -32,11 +33,17 @@ body {
     justify-content: center;
     text-align: center;
     width: 90%;
+    
     h2 {
       text-align: center;
       color: #ffff;
       font-size: 1.4rem;
     }
+    
+  video {
+    width: 70%;
+    margin: 0 auto;
+  }
 
     p {
       line-height: 1cap;
