@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Mini Kurs HTML5 I CSS3 - Stanisław Szymczykowski 3G</title>
+    <title>MiniKurs HTML5 I CSS3 - Stanisław Szymczykowski 3G</title>
 
     <link
       rel="stylesheet"
@@ -15,6 +15,12 @@
     <link
       rel="stylesheet"
       href="../styles/formularze/formularze2/formularze2.css"
+    />
+    <!-- Link favicon -->
+    <link
+      rel="shortcut icon"
+      href="../images/html5logo.png"
+      type="image/x-icon"
     />
   </head>
   <body>
@@ -31,10 +37,11 @@
                 <i class="fa fa-html5" aria-hidden="true"></i>
               </div>
               <h5>
-                Mini Kurs -
-                <i class="fa fa-html5" aria-hidden="true">
-                  <i class="fa fa-css3" aria-hidden="true"></i
-                ></i>
+                <a href="../../index.html">
+                  MiniKurs -
+                  <i class="fa fa-html5" aria-hidden="true">
+                    <i class="fa fa-css3" aria-hidden="true"></i></i
+                ></a>
               </h5>
             </div>
           </div>
@@ -53,12 +60,19 @@
                   <div class="sub-menu-list">
                     <ul>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Sprawdzian - Nowe Okno"
+                          target="_blank"
+                          href="../pages-elements/sprawdzian/Sprawdzian Stanisław Szymczykowski 3g.html"
+                        >
                           <span class="menu-title">Nowe Okno</span>
                         </a>
                       </li>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Sprawdzian - Okno w środku"
+                          href="../pages/sprawdzian.html"
+                        >
                           <span class="menu-title">Okno w środku</span>
                         </a>
                       </li>
@@ -76,12 +90,19 @@
                   <div class="sub-menu-list">
                     <ul>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Listy - Nowe Okno"
+                          target="_blank"
+                          href="../pages-elements/lista/index.html"
+                        >
                           <span class="menu-title">Nowe Okno</span>
                         </a>
                       </li>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Listy - Okno w środku"
+                          href="../pages/listy.html"
+                        >
                           <span class="menu-title">Okno w środku</span>
                         </a>
                       </li>
@@ -99,12 +120,19 @@
                   <div class="sub-menu-list">
                     <ul>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Tabele - Nowe Okno"
+                          target="_blank"
+                          href="../pages-elements/tabele/index.html"
+                        >
                           <span class="menu-title">Nowe Okno</span>
                         </a>
                       </li>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Tabele- Okno w środku"
+                          href="../pages/tabele.html"
+                        >
                           <span class="menu-title">Okno w środku</span>
                         </a>
                       </li>
@@ -122,12 +150,19 @@
                   <div class="sub-menu-list">
                     <ul>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Tabele, listy, łącza - Nowe Okno"
+                          target="_blank"
+                          href="../pages-elements/tabele_listy_lacza/index.html"
+                        >
                           <span class="menu-title">Nowe Okno</span>
                         </a>
                       </li>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Tabele, listy, łącza - Okno w środku"
+                          href="../pages/tabele-listy-lacza.html"
+                        >
                           <span class="menu-title">Okno w środku</span>
                         </a>
                       </li>
@@ -145,12 +180,18 @@
                   <div class="sub-menu-list">
                     <ul>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Formularze 1 - Okno w środku"
+                          href="../pages/formularze1.html"
+                        >
                           <span class="menu-title">Formularze 1</span>
                         </a>
                       </li>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Formularze 2 - Okno w środku"
+                          href="../pages/formularze2.html"
+                        >
                           <span class="menu-title">Formularze 2</span>
                         </a>
                       </li>
@@ -168,12 +209,19 @@
                   <div class="sub-menu-list">
                     <ul>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Multimedia - Nowe Okno"
+                          target="_blank"
+                          href="../pages-elements/multimedia v2/index.html"
+                        >
                           <span class="menu-title">Nowe Okno</span>
                         </a>
                       </li>
                       <li class="menu-item">
-                        <a href="#">
+                        <a
+                          title="Multimedia - Okno w środku"
+                          href="../pages/multimedia.html"
+                        >
                           <span class="menu-title">Okno w środku</span>
                         </a>
                       </li>
@@ -239,9 +287,20 @@
       <div id="overlay" class="overlay"></div>
       <div class="layout">
         <main class="content">
+          <div class="title-frame">
+            <button
+              title="Powrót od strony głównej"
+              class="comeback"
+              onclick="window.location.href='../../index.html'"
+            >
+              <i class="fas fa-angle-left"></i>
+              Powrót
+            </button>
+            <h1>Formularze 2</h1>
+          </div>
           <div class="container">
             <iframe
-              src="../pages-elements/formularze/formularze2/index.html"
+              src="../pages-elements/formularze/formularz2/index.html"
               name="Formularze 2"
               frameborder="0"
             ></iframe>

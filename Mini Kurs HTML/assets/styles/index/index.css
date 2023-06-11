@@ -45,6 +45,10 @@ body {
   align-items: center;
   text-align: center;
 }
+.container .html-info-container .text-video a {
+  color: #4dff00;
+  text-decoration: underline;
+}
 
 .video-container {
   width: 800px;

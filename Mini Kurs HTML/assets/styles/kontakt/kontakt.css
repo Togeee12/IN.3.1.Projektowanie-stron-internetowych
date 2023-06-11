@@ -75,4 +75,18 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+}
+
+.droga-szkola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.droga-szkola a {
+  font-size: 1.4rem;
+}
+.droga-szkola a:hover {
+  color: #478fee;
+  cursor: pointer;
 }/*# sourceMappingURL=kontakt.css.map */

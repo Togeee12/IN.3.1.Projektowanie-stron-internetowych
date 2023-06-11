@@ -1,4 +1,4 @@
-@import "../menu/menu.css";
+@import "../../menu/menu.css";
 
 body {
   margin: 0;
@@ -26,7 +26,6 @@ body {
     border: none;
     transition: background-color 0.4s;
     font-size: 1.2rem;
-
     &:hover {
       background-color:#273fb2;
       cursor: pointer;

@@ -40,10 +40,10 @@ body {
       font-size: 1.4rem;
     }
     
-  video {
-    width: 70%;
-    margin: 0 auto;
-  }
+    video {
+      width: 70%;
+      margin: 0 auto;
+    }
 
     p {
       line-height: 1cap;
@@ -53,6 +53,12 @@ body {
       text-align: center;
     }
 
+    .text-video{
+      a {
+        color: #4dff00;
+        text-decoration: underline;
+      }
+    }
   }
 }
 

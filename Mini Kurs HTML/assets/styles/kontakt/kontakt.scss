@@ -90,3 +90,17 @@ $form-button-font-color: #fff;
     border-radius: 20px;
   }
 }
+
+.droga-szkola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  a {
+    font-size: 1.4rem;
+    &:hover {
+      color: #478fee;
+      cursor: pointer;
+    }
+  }
+}
