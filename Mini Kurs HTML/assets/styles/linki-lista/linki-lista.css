@@ -1,0 +1,21 @@
+@import "../menu/menu.css";
+.div-table {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+.div-table table {
+  width: 100%;
+}
+.div-table table th, .div-table table td {
+  padding: 10px;
+}
+.div-table table th {
+  background-color: #003366;
+}
+.div-table table tr:nth-child(even) {
+  background-color: #66ccff;
+}
+.div-table table tr:nth-child(odd) {
+  background-color: #003366;
+}/*# sourceMappingURL=linki-lista.css.map */
