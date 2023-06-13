@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MiniKurs HTML5 I CSS3 - Stanisław Szymczykowski 3G</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    />
+    <link rel="stylesheet" href="../styles/linki-lista/linki-lista.css" />
+    <!-- Link favicon -->
+    <link
+      rel="shortcut icon"
+      href="../images/html5logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="layout has-sidebar fixed-sidebar fixed-header">
+      <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+        <a id="btn-collapse" class="sidebar-collapser"
+          ><i class="fas fa-arrow-right"></i
+        ></a>
+        <div class="sidebar-layout">
+          <div class="sidebar-header">
+            <div class="pro-sidebar-logo">
+              <div>
+                <i class="fa fa-html5" aria-hidden="true"></i>
+              </div>
+              <h5>
+                <a href="../../index.html">
+                  MiniKurs -
+                  <i class="fa fa-html5" aria-hidden="true">
+                    <i class="fa fa-css3" aria-hidden="true"></i></i
+                ></a>
+              </h5>
+            </div>
+          </div>
+          <div class="sidebar-content">
+            <nav class="menu open-current-submenu">
+              <ul>
+                <li class="menu-header"><span> PROJEKTY </span></li>
+                <!-- Sprawdzian -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-pen-ruler"></i>
+                    </span>
+                    <span class="menu-title">Sprawdzian</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Sprawdzian - Nowe Okno"
+                          target="_blank"
+                          href="../pages-elements/sprawdzian/Sprawdzian Stanisław Szymczykowski 3g.html"
+                        >
+                          <span class="menu-title">Nowe Okno</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Sprawdzian - Okno w środku"
+                          href="../pages/sprawdzian.html"
+                        >
+                          <span class="menu-title">Okno w środku</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Listy -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-list"></i>
+                    </span>
+                    <span class="menu-title">Listy</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Listy - Nowe Okno"
+                          target="_blank"
+                          href="../pages-elements/lista/index.html"
+                        >
+                          <span class="menu-title">Nowe Okno</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Listy - Okno w środku"
+                          href="../pages/listy.html"
+                        >
+                          <span class="menu-title">Okno w środku</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Tabele -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-table-cells"></i>
+                    </span>
+                    <span class="menu-title">Tabele</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Tabele - Nowe Okno"
+                          target="_blank"
+                          href="../pages-elements/tabele/index.html"
+                        >
+                          <span class="menu-title">Nowe Okno</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Tabele- Okno w środku"
+                          href="../pages/tabele.html"
+                        >
+                          <span class="menu-title">Okno w środku</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Tabele listy łącza -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-link"></i>
+                    </span>
+                    <span class="menu-title">Tabele, listy, łącza</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Tabele, listy, łącza - Nowe Okno"
+                          target="_blank"
+                          href="../pages-elements/tabele_listy_lacza/index.html"
+                        >
+                          <span class="menu-title">Nowe Okno</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Tabele, listy, łącza - Okno w środku"
+                          href="../pages/tabele-listy-lacza.html"
+                        >
+                          <span class="menu-title">Okno w środku</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Formularze -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-inbox"></i>
+                    </span>
+                    <span class="menu-title">Formularze</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Formularze 1 - Okno w środku"
+                          href="../pages/formularze1.html"
+                        >
+                          <span class="menu-title">Formularze 1</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Formularze 2 - Okno w środku"
+                          href="../pages/formularze2.html"
+                        >
+                          <span class="menu-title">Formularze 2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Multimedia -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span class="menu-title">Multimedia</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Multimedia - Nowe Okno"
+                          target="_blank"
+                          href="../pages-elements/multimedia v2/index.html"
+                        >
+                          <span class="menu-title">Nowe Okno</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Multimedia - Okno w środku"
+                          href="../pages/multimedia.html"
+                        >
+                          <span class="menu-title">Okno w środku</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <!-- ========================== -->
+                <li class="menu-header" style="padding-top: 20px">
+                  <span> INNE </span>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-question"></i>
+                    </span>
+                    <span class="menu-title">Ciekawostki</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./linki-lista.html">
+                    <span class="menu-icon">
+                      <i class="fas fa-anchor"></i>
+                    </span>
+                    <span class="menu-title">Linki</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./kontakt.html">
+                    <span class="menu-icon">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="menu-title">Kontakt</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sidebar-footer">
+            <div class="footer-box">
+              <div style="padding: 0 10px">
+                <span style="display: block; margin-bottom: 10px"
+                  >Zobacz także strony moich innych kolegów!
+                </span>
+                <div style="margin-bottom: 15px">
+                  <a href="">
+                    <i class="fas fa-paperclip"></i>
+                    <span>Tymon Wilczek</span>
+                  </a>
+                </div>
+                <div style="margin-bottom: 5px">
+                  <a href="">
+                    <i class="fas fa-paperclip"></i>
+                    <span>Patryk Skrzypczak</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- Strona  -->
+      <div id="overlay" class="overlay"></div>
+      <div class="layout">
+        <main class="content">
+          <div class="div-table">
+            <table>
+              <tr>
+                <th>Np</th>
+                <th>Nazwa</th>
+                <th>Logo</th>
+                <th>Opis</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Technikum Elektroniczne Kasprzak</td>
+                <td></td>
+                <td>
+                  Technikum Elektroniczne nr 1 im. Marcina Kasprzaka to
+                  renomowana szkoła techniczna w Polsce, specjalizująca się w
+                  elektronice, automatyce i informatyce. Oferuje uczniom solidne
+                  wykształcenie teoretyczne i praktyczne umiejętności potrzebne
+                  w tych dziedzinach. Szkoła posiada nowoczesne pracownie i
+                  doświadczoną kadrę pedagogiczną. Absolwenci mają szerokie
+                  możliwości rozwoju zawodowego w branżach związanych z
+                  elektroniką i automatyką.
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Kurs HTML</td>
+                <td></td>
+                <td>
+                  Tutaj rozpocznij swoją przygodę z tworzeniem stron
+                  internetowych! HTML to język opisowy, w którym przy pomocy
+                  znaczników (tagów) określamy co zawiera dana podstrona - mogą
+                  to być hiperłącza, obrazki, pola edycyjne, przyciski, tabele,
+                  listy numerowane, pojemniki na zawartość, akapity tekstu,
+                  nagłówki itd. Oprócz zawartości strony, w HTML określamy także
+                  istotne parametry witryny – tytuł i opis w rezultatach
+                  wyszukiwania Google, język i zestaw znaków właściwy dla danego
+                  kraju, skrypty i arkusze stylów, których witryna używa etc.
+                  Uwaga: pełny opis przeznaczenia poszczególnych technologii
+                  webowych znajdziesz w tym filmie.
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Kurs CSS</td>
+                <td></td>
+                <td>
+                  CSS to tak zwane kaskadowe arkusze stylów (ang. Cascading
+                  Style Sheets). Style służą do opisania wyglądu elementów
+                  witryny, zdefiniowanych uprzednio w HTML (np. jakie mają
+                  kolory, rozmiary, marginesy, a nawet jak są względem siebie
+                  rozmieszczone). A dlaczego są to kaskadowe arkusze stylów?
+                  Kaskada to rodzaj wodospadu, mającego budowę schodkową - jest
+                  to wyraźna aluzja do potężnego mechanizmu dziedziczenia
+                  właściwości w CSS, który niejednokrotnie zaoszczędzi nam wiele
+                  pracy (i który zrozumiemy w kursie). Uwaga: pełny opis
+                  przeznaczenia poszczególnych technologii webowych znajdziesz w
+                  tym filmie.
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Wikipedia</td>
+                <td></td>
+                <td>
+                  Wikipedia to popularna internetowa encyklopedia, która oferuje
+                  dostęp do ogromnej ilości wiedzy z różnych dziedzin. Jest to
+                  platforma oparta na zasadzie wolnego dostępu, co oznacza, że
+                  treści są tworzone i edytowane przez społeczność użytkowników.
+                  Wikipedię cechuje otwartość, kolaboracja i zasada
+                  neutralności, co sprawia, że staje się niezwykle wartościowym
+                  źródłem informacji. Treści na Wikipedii są pisane w wielu
+                  językach, co umożliwia dostęp do wiedzy dla szerokiej
+                  publiczności na całym świecie.
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Google</td>
+                <td></td>
+                <td>
+                  Google to popularna wyszukiwarka internetowa. Stworzona przez
+                  studentów Stanfordu, Larry'ego Page'a i Sergeya Brina. Prosta
+                  i intuicyjna, stała się nieodłącznym narzędziem dla milionów
+                  użytkowników. Oferuje mapy, wyszukiwanie obrazów, Google News,
+                  tłumaczenia, Google Drive i narzędzia reklamowe. Popularność
+                  zdobyła dzięki doskonałym usługom i innowacjom. To
+                  niezastąpione narzędzie w dzisiejszym zglobalizowanym i
+                  cyfrowym świecie.
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>YouTube</td>
+                <td></td>
+                <td>
+                  YouTube to platforma internetowa, gdzie użytkownicy mogą
+                  przesyłać, oglądać i udostępniać wideo. To wirtualne
+                  środowisko, gdzie ludzie dzielą się twórczością, informacjami
+                  i rozrywką. Oferuje filmy, muzykę, podcasty i wiele innych
+                  treści. Można subskrybować kanały i otrzymywać powiadomienia o
+                  nowych filmach. YouTube to miejsce dla twórców, którzy budują
+                  markę i zarabiają na reklamach. To integralna część naszego
+                  życia cyfrowego, dająca rozrywkę, edukację i społeczność.
+                  Dzięki YouTube możemy odkrywać pasje, poznawać kultury i
+                  dzielić się pomysłami ze światem.
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Facebook</td>
+                <td></td>
+                <td>
+                  Facebook to największa platforma społecznościowa, pozwalająca
+                  tworzyć profile, nawiązywać kontakty, udostępniać treści i
+                  komunikować się online. Użytkownicy dodają zdjęcia, filmy i
+                  wpisy, dzieląc się swoim życiem, zainteresowaniami i opiniami.
+                  Polubienia, komentarze, udostępnianie treści, tworzenie
+                  wydarzeń i grup umożliwiają interakcję i budowanie
+                  społeczności. To narzędzie marketingowe dla firm, pozwalające
+                  promować produkty, dotrzeć do klientów i angażować się.
+                  Facebook to kluczowy element naszego życia online,
+                  umożliwiający utrzymanie kontaktów, dzielenie się informacjami
+                  i uczestnictwo w społecznościach.
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Policja</td>
+                <td></td>
+                <td>
+                  Policja to instytucja utrzymująca porządek publiczny,
+                  chroniąca obywateli i egzekwująca prawo. Jej zadaniem jest
+                  zapewnienie bezpieczeństwa społeczeństwu i zwalczanie
+                  przestępczości. Policjanci patrolują ulice, reagują na
+                  sytuacje awaryjne, prowadzą śledztwa, aresztują podejrzanych i
+                  udzielają pomocy w kryzysowych sytuacjach. Współpracują z
+                  innymi organami ścigania i służbami ratowniczymi. Praca opiera
+                  się na przestrzeganiu prawa, ochronie praw obywateli i
+                  utrzymaniu porządku społecznego. Wykorzystują nowoczesne
+                  technologie, jak monitoring czy systemy komunikacji radiowej,
+                  aby być bardziej skutecznymi. Policja odgrywa ważną rolę w
+                  zapewnianiu bezpieczeństwa i porządku w społeczeństwie.
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>ZHP</td>
+                <td></td>
+                <td>
+                  ZHP (Związek Harcerstwa Polskiego) to organizacja harcerska w
+                  Polsce, wychowująca młodzież w duchu wartości harcerskich.
+                  Oferuje biwaki, obozy, rajdy i szkolenia. Harcerze uczą się
+                  samodzielności, pracy zespołowej i umiejętności survivalowych.
+                  Angażują się w działania społeczne i charytatywne. Istnieje
+                  hierarchia stopni harcerskich, symbolizująca rozwój osobisty.
+                  ZHP rozwija charakter, wartości patriotyczne i uczestnictwo w
+                  społeczności. Harcerstwo to przygoda, nauka i budowanie więzi
+                  międzyludzkich.
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>PCK</td>
+                <td></td>
+                <td>
+                  PCK (Polski Czerwony Krzyż) to organizacja humanitarna w
+                  Polsce, pomagająca osobom potrzebującym. Oferuje pierwszą
+                  pomoc, akcje krwiodawstwa, wsparcie dla osób chorych i
+                  niepełnosprawnych, pomoc dla uchodźców oraz działania
+                  edukacyjne. PCK angażuje się w ochronę życia i zdrowia,
+                  ratowanie w sytuacjach kryzysowych. Działa z zasadami
+                  neutralności, bezstronności i dobrowolności. To ważny podmiot
+                  wspierający potrzebujących w Polsce.
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Fandom</td>
+                <td></td>
+                <td>
+                  Fandom to społeczność fanów, związana z konkretnym dziełem,
+                  osobą czy zespołem. Fani tworzą treści, takie jak fanarty,
+                  fanfiction, teorie i dyskusje. Spotykają się na konwentach i
+                  organizują wydarzenia. Internet jest kluczowy dla rozwoju
+                  fandomów, umożliwiając komunikację i tworzenie społeczności
+                  online. To przestrzeń, gdzie fani mogą wyrazić
+                  zainteresowania, dzielić się emocjami i łączyć z podobnie
+                  myślącymi. Fandomy sprzyjają kreatywności i budowaniu więzi
+                  między fanami.
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Steam</td>
+                <td></td>
+                <td>
+                  Steam to platforma dystrybucji gier i społeczność graczy.
+                  Umożliwia zakup, pobieranie i aktualizację gier na PC. Zawiera
+                  duży katalog tytułów od różnych wydawców. Oferuje funkcje
+                  społecznościowe, takie jak czaty, fora i profile użytkowników.
+                  Wsparcie dla twórców modów. Popularność zyskał dzięki wygodnej
+                  dystrybucji cyfrowej i promocjom. Centrum dla miłośników gier
+                  komputerowych.
+                </td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Microsoft</td>
+                <td></td>
+                <td>
+                  Microsoft to międzynarodowa korporacja technologiczna, twórca
+                  Windows i Office. Oferuje systemy operacyjne, narzędzia
+                  programistyczne, chmurę obliczeniową, rozwiązania dla firm,
+                  Xbox i urządzenia mobilne. Aktywny w AI, IoT i edukacji.
+                  Rozwija usługi chmurowe, takie jak Azure. Jeden z największych
+                  graczy na rynku technologicznym, zdobywający zaufanie klientów
+                  na całym świecie.
+                </td>
+              </tr>
+              <tr>
+                <td>14.</td>
+                <td>Apple</td>
+                <td></td>
+                <td>
+                  Apple to światowy lider technologiczny. Twórcy iPhone'a,
+                  iPada, Maca i Apple Watch'a. Oferuje oprogramowanie, w tym
+                  iOS, macOS, Apple Music, iCloud i Apple Pay. Produkty cechują
+                  się pięknym designem, intuicyjnym interfejsem i wysoką
+                  jakością. Dbają o prywatność i ekosystem. Posiadają silną
+                  społeczność fanów. Tworzą trendy i zmieniają sposób
+                  korzystania z technologii w codziennym życiu.
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- Footer -->
+          <footer class="footer">
+            <a target="_blank" href="https://github.com/togeee12">
+              Stanisław Szymczykowski 3G
+            </a>
+          </footer>
+        </main>
+        <div class="overlay"></div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../scripts/linki-lista.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c7f642db95.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

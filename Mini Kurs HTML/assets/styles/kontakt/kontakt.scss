@@ -1,0 +1,106 @@
+@import "../menu/menu.css";
+$main-font-color: #000000;
+$form-background-color: #f2f2f2;
+$form-font-color: #333;
+$form-input-background-color: #fff;
+$form-input-border-color: #ccc;
+$form-input-font-color: #555;
+$form-input-focus-border-color: #999;
+$form-button-background-color: #1d4981;
+$form-button-font-color: #fff;
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  .box {
+    flex: 1;
+    margin: 20px;
+    background-color: $form-input-background-color;
+    color: $main-font-color;
+    padding: 20px;
+    border-radius: 25px;
+    h2 {
+      text-align: center;
+      margin: 0;
+      font-size: 1.8rem;
+      color: $form-font-color;
+    }
+    a {
+      color: $main-font-color;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    p {
+      color: $main-font-color;
+      font-size: 1rem;
+      span {
+        font-weight: 600;
+      }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: $form-font-color;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid $form-input-border-color;
+      border-radius: 4px;
+      background-color: $form-input-background-color;
+      color: $form-input-font-color;
+
+      &:focus {
+        border-color: $form-input-focus-border-color;
+      }
+    }
+
+    button[type="submit"] {
+      margin: 0 auto;
+      background-color: $form-button-background-color;
+      color: $form-button-font-color;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 0 auto;
+      display: block;
+
+      &:hover {
+        background-color: #478fee;
+      }
+    }
+  }
+}
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  iframe {
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+}
+
+.droga-szkola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  a {
+    font-size: 1.4rem;
+    &:hover {
+      color: #478fee;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+/* Galeria */
+#gallery {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#gallery img {
+ height: 375px;
+ margin: 25px;
+ transition: transform 0.5s ease;
+}
+
+#gallery img:hover {
+ transform: scale(1.1);
+}
+
+/* ================================================= */

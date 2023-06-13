@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/strony/opinie.css" />
+    <!-- Skrypty -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="../scripts/strony/opinie.js"></script>
+    <title>Globetrek</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container-product">
+        <h1>Opinie o produkcie</h1>
+        <form>
+          <label for="name">Imię:</label>
+          <input type="text" id="name" required />
+          <label for="rating">Ocena:</label>
+          <select id="rating" required>
+            <option value="">Wybierz ocenę</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label for="tour">Wycieczka:</label>
+          <select id="tour" required>
+            <option value="">Wybierz wycieczkę:</option>
+            <option value="Hiszpanie">Hiszpania</option>
+            <option value="Turcja">Turcja</option>
+            <option value="Grecja">Grecja</option>
+            <option value="Bułgaria">Bułgaria</option>
+          </select>
+          <label for="comment">Opinia:</label>
+          <textarea id="comment" required></textarea>
+          <button type="submit">Dodaj opinię</button>
+        </form>
+        <div id="reviews"></div>
+      </div>
+      <div class="side_menu">
+        <div class="burger_box">
+          <div class="menu-icon-container">
+            <a href="#" class="menu-icon js-menu_toggle closed">
+              <span class="menu-icon_box">
+                <span class="menu-icon_line menu-icon_line--1"></span>
+                <span class="menu-icon_line menu-icon_line--2"></span>
+                <span class="menu-icon_line menu-icon_line--3"></span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- Menu start -->
+        <div class="container">
+          <h2 class="menu_title"></h2>
+          <ul class="list_load">
+            <li class="list_item">
+              <a href="../pages/dashboard.html">Oferta</a>
+            </li>
+            <li class="list_item"><a href="#">Ulubione</a></li>
+            <li class="list_item">
+              <a href="../pages/opinie.html">Moje opinie</a>
+            </li>
+            <li class="list_item">
+              <a href="../pages/user.html">Moje konto</a>
+            </li>
+            <li class="list_item"><a href="../pages/source.html">Źródła</a></li>
+          </ul>
+          <div class="spacer_box"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

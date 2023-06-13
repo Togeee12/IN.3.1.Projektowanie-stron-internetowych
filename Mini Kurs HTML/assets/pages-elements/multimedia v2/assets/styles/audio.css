@@ -1,0 +1,134 @@
+/* Import Menu CSS */
+@import "./menu.css";
+@import "./prism.css";
+/* Import czcionki - na wszelki wypadek dodaje także tutaj */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fira Code", monospace, Arial, Helvetica, sans-serif;
+  background-color: #1a1e23;
+  color: var(--text-color);
+}
+
+.main {
+  padding: 20px;
+  text-align: center;
+}
+
+.main-introduction {
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-introduction-title {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.main-introduction-more {
+  padding: 20px;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.main-content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.main-content-title {
+  font-size: 28px;
+}
+
+.main-content-video {
+  padding: 20px;
+}
+
+.main-content-code-container {
+  padding: 10px;
+}
+
+.main-content-code-container-description {
+  font-size: 22px;
+}
+
+.main-content-code-container-code {
+  padding: 20px;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* Przycisk do kopiowania  */
+
+#copy-button {
+  width: 140px;
+  height: 45px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: bold;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.38);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+#copy-button:hover {
+  cursor: pointer;
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.main-content-under-title {
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.main-content-under-title-description {
+  font-size: 17px;
+  padding-top: 20px;
+}
+
+audio {
+  width: 500px;
+}
+
+.hold-container {
+  border: 1px solid #efefef;
+  width: 80%;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+.attributes {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+.attributes h2 {
+  padding: 20px;
+  font-size: 25px;
+}
+
+.attributes p {
+  padding: 10px;
+}
+
+.attributes ul {
+  padding: 10px;
+  font-size: 17px;
+  text-align: left;
+}

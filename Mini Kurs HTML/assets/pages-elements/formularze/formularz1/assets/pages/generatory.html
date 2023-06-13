@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link rel="stylesheet" href="../styles/strony/generatory.css" />
+    <!-- Skrypty -->
+    <script defer src="../scripts/strony/generatory.js"></script>
+    <title>CSS GENERATOR</title>
+  </head>
+
+  <body>
+    <!-- Menu -->
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li>
+          <a href="">
+            <h3 class="User"></h3>
+            <span class="Email"></span>
+          </a>
+        </li>
+        <li><a href="../pages/dashboard.html">Główna</a></li>
+        <li><a href="../pages/generatory.html">Generatory</a></li>
+        <li><a href="">Źródła</a></li>
+      </ul>
+    </div>
+    <div class="logout-btn">
+      <button>Wyloguj</button>
+    </div>
+
+    <!-- Strona -->
+    <div class="main-someting">
+      <div class="panel-collection">
+        <div class="view-options">
+          <button id="grid-view-btn" class="active">Grid</button>
+          <button id="list-view-btn">Lista</button>
+        </div>
+        <div class="panel-grid-view">
+          <div class="panel-item">
+            <a href="../pages/generatory/box-shadow.html">
+              <h3>Box shadow</h3>
+              <p>
+                Box Shadow to stylizacja używana w CSS do tworzenia cieniowania
+                wokół elementu HTML.
+              </p>
+            </a>
+          </div>
+          <div class="panel-item">
+            <a href="../pages/generatory/text-shadow.html">
+              <h3>Text shadow</h3>
+              <p>
+                Text Shadow to stylizacja używana w CSS do dodawania cieniowania
+                do tekstu. Dzięki Text Shadow można dodać efekt trójwymiarowości
+                do tekstu.
+              </p>
+            </a>
+          </div>
+          <div class="panel-item">
+            <a href="../pages/generatory/flexbox.html">
+              <h3>Flexbox</h3>
+              <p>
+                Flexbox to moduł w CSS, który pozwala na łatwe i responsywne
+                ustawienie elementów na stronie internetowej.
+              </p>
+            </a>
+          </div>
+          <div class="panel-item">
+            <a href="">
+              <h3>Background</h3>
+              <p>
+                W CSS, właściwość "background" pozwala na ustawienie tła
+                elementu HTML. Tło może być jednolite (solid), lub składać się z
+                wielu elementów, takich jak kolor, obraz, gradient, powtarzalny
+                wzór (pattern) lub kombinacja tych elementów.
+              </p>
+            </a>
+          </div>
+          <div class="panel-item">
+            <a href="">
+              <h3>Gradient</h3>
+              <p>
+                Gradient to efekt, który może być zastosowany jako tło dla
+                elementu HTML lub do stylizacji tekstu, borderów i innych części
+                elementu. Gradient składa się z przejścia pomiędzy dwoma lub
+                większą liczbą kolorów, tworząc płynne przejścia.
+              </p>
+            </a>
+          </div>
+          <div class="panel-item">
+            <a href="">
+              <h3>Button</h3>
+              <p>
+                Button to element interaktywny na stronie internetowej, który
+                pozwala użytkownikom na wykonanie akcji, takich jak przesłanie
+                formularza, przekierowanie na inny adres URL, uruchomienie
+                funkcji JavaScript, itp.
+              </p>
+            </a>
+          </div>
+        </div>
+        <!-- Widok listy  -->
+        <ul class="panel-list-view" style="display: none">
+          <li>
+            <a href="../pages/generatory/box-shadow.html">
+              <h3>Box shadow</h3>
+              <p>
+                Box Shadow to stylizacja używana w CSS do tworzenia cieniowania
+                wokół elementu HTML.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="../pages/generatory/text-shadow.html">
+              <h3>Text shadow</h3>
+              <p>
+                Text Shadow to stylizacja używana w CSS do dodawania cieniowania
+                do tekstu. Dzięki Text Shadow można dodać efekt trójwymiarowości
+                do tekstu.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="../pages/generatory/flexbox.html">
+              <h3>Flexbox</h3>
+              <p>
+                Flexbox to moduł w CSS, który pozwala na łatwe i responsywne
+                ustawienie elementów na stronie internetowej.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h3>Background</h3>
+              <p>
+                W CSS, właściwość "background" pozwala na ustawienie tła
+                elementu HTML. Tło może być jednolite (solid), lub składać się z
+                wielu elementów, takich jak kolor, obraz, gradient, powtarzalny
+                wzór (pattern) lub kombinacja tych elementów.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h3>Gradient</h3>
+              <p>
+                Gradient to efekt, który może być zastosowany jako tło dla
+                elementu HTML lub do stylizacji tekstu, borderów i innych części
+                elementu. Gradient składa się z przejścia pomiędzy dwoma lub
+                większą liczbą kolorów, tworząc płynne przejście między nimi.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h3>Button</h3>
+              <p>
+                Button to element interaktywny na stronie internetowej, który
+                pozwala użytkownikom na wykonanie akcji, takich jak przesłanie
+                formularza, przekierowanie na inny adres URL, uruchomienie
+                funkcji JavaScript, itp.
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

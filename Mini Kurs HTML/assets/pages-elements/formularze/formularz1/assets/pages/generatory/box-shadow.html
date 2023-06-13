@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link
+      rel="stylesheet"
+      href="../../styles/strony/generatory/box-shadow.css"
+    />
+    <!-- Skrypty -->
+    <script defer src="../../scripts/strony/generatory/box-shadow.js"></script>
+    <title>CSS GENERATOR - BOX SHADOW</title>
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li>
+          <a href="">
+            <h3 class="User"></h3>
+            <span class="Email"></span>
+          </a>
+        </li>
+        <li><a href="../dashboard.html">Główna</a></li>
+        <li><a href="../generatory.html">Generatory</a></li>
+        <li><a href="">Źródła</a></li>
+      </ul>
+    </div>
+    <div class="logout-btn">
+      <button>Wyloguj</button>
+    </div>
+
+    <!-- Strona -->
+    <div class="main">
+      <div class="box"></div>
+      <div class="controls">
+        <label for="x-offset">X:</label>
+        <input type="range" id="x-offset" min="-50" max="50" value="0" />
+        <label for="y-offset">Y:</label>
+        <input type="range" id="y-offset" min="-50" max="50" value="0" />
+        <label for="blur-radius">Promień rozmycia:</label>
+        <input type="range" id="blur-radius" min="0" max="50" value="0" />
+        <label for="spread-radius">Promień rozrzutu:</label>
+        <input type="range" id="spread-radius" min="0" max="50" value="0" />
+      </div>
+
+      <div class="box-under">
+        <label class="code-label" for="code">Code:</label>
+        <textarea id="code" readonly></textarea>
+        <br />
+        <label for="color">Kolor:</label>
+        <input type="color" id="color" value="#000000" />
+        <br />
+        <button class="copy-code" id="copy-code-btn">Kopiuj</button>
+        <button class="copy-code" id="reset-btn">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>

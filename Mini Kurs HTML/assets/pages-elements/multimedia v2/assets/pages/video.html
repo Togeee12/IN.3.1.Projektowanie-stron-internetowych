@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ========== Style ========== -->
+    <link rel="stylesheet" href="../styles/video.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css@master/dist/aqua.min.css"
+    />
+    <script src="../scripts/prism.js"></script>
+    <script src="../scripts/video.js"></script>
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <!-- Alert -->
+    <div id="alert" class="myAlert">
+      <span class="closebtn" onclick="closeAlert()">&times;</span>
+      <strong>Uwaga!</strong> Jeśli nie widzisz kontrolek odtwarzacza wideo:
+      prawy przycisk myszy --> Pokaż wszystkie elementy sterujące.
+    </div>
+    <!-- cd-popup -->
+    <div class="main">
+      <div class="main-introduction">
+        <div class="main-introduction-title">
+          Osadzanie wideo na stronie internetowej
+        </div>
+        <div class="main-introduction-more">
+          W dzisiejszych czasach duża ilość ludzi nie jest wstanie sobie
+          wyobrazić życia bez wideo. Wideo stało się nieodłączną częścią naszego
+          życia, otaczając nas z każdej możliwej strony. Z uwagi na to,
+          osadzanie treści w formacie filmu na naszej stronie HTML jest
+          wyjątkowo dobrym sposobem na przekazanie naszej myśli do odbiorcy.
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content-title">
+          Osadzanie wideo z plików maszyny (lokalnie)
+          <i class="fa fa-folder-open"></i>
+        </div>
+        <div class="main-content-video">
+          <video
+            width="1000"
+            title="Rodney Kantorski dzień wolny"
+            class="main-content-video"
+            controls
+          >
+            <source src="../media/video/movie1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="main-content-code-container">
+          <div class="main-content-code-container-description">
+            Aby uzyskać powyższy efekt w HTML, należy umieścić poniższy kod:
+          </div>
+          <div class="main-content-code-container-code">
+            <script src="https://gist.github.com/Togeee12/afa85a965d4a7dda3493c91c99ca974d.js?file=videoRodney.html"></script>
+            <button id="copy-button">Copy</button>
+          </div>
+        </div>
+        <div class="main-content-title">
+          Osadzanie animacji z serwisu YouTube
+          <i class="fab fa-internet-explorer"></i>
+        </div>
+        <div class="main-content-video">
+          <iframe
+            width="1000"
+            height="500"
+            src="https://www.youtube.com/embed/JFpmnoh0GqU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="main-content-code-container">
+          <div class="main-content-code-container-description">
+            Aby uzyskać powyższy efekt w HTML, należy umieścić poniższy kod:
+          </div>
+          <div class="main-content-code-container-code">
+            <script src="https://gist.github.com/Togeee12/afa85a965d4a7dda3493c91c99ca974d.js?file=videoYoutubeAnim.html"></script>
+            <button id="copy-button">Copy</button>
+          </div>
+        </div>
+        <div class="main-content-title">
+          Osadzanie filmu z serwisu YouTube
+          <i class="fa fa-folder-open"></i>
+        </div>
+        <div class="main-content-video">
+          <iframe
+            width="1000"
+            height="500"
+            src="https://www.youtube.com/embed/i6GnJcs7mJ8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="main-content-code-container">
+          <div class="main-content-code-container-description">
+            Aby uzyskać powyższy efekt w HTML, należy umieścić poniższy kod:
+          </div>
+          <div class="main-content-code-container-code">
+            <script src="https://gist.github.com/Togeee12/afa85a965d4a7dda3493c91c99ca974d.js?file=videoYoutubeMovie.html"></script>
+
+            <button id="copy-button">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hold-container">
+      <div class="attributes">
+        <h2>Atrybuty video</h2>
+        <p>
+          Atrybuty video to specjalne cechy, które można przypisać do elementu
+          wideo w celu określenia jego wyglądu, zachowania lub innych
+          właściwości. Poniżej przedstawiam najważniejsze atrybuty video oraz
+          możliwe wartości:
+        </p>
+
+        <ul>
+          <li>
+            <strong>src:</strong> określa adres URL wideo; wartość to łańcuch
+            znaków
+          </li>
+          <li>
+            <strong>poster:</strong> określa adres URL pliku obrazka, który jest
+            wyświetlany, gdy wideo jest ładowane; wartość to łańcuch znaków
+          </li>
+          <li>
+            <strong>controls:</strong> określa, czy powinny być wyświetlane
+            elementy sterujące odtwarzaniem; wartość to "controls" (elementy są
+            widoczne) lub pusty ciąg znaków (elementy są ukryte)
+          </li>
+          <li>
+            <strong>autoplay:</strong> określa, czy wideo powinno automatycznie
+            rozpocząć odtwarzanie po załadowaniu strony; wartość to "autoplay"
+            (odtwarzanie automatyczne) lub pusty ciąg znaków (odtwarzanie
+            manualne)
+          </li>
+          <li>
+            <strong>loop:</strong> określa, czy wideo powinno być odtwarzane w
+            pętli; wartość to "loop" (odtwarzanie w pętli) lub pusty ciąg znaków
+            (odtwarzanie jednorazowe)
+          </li>
+          <li>
+            <strong>width:</strong> określa szerokość wideo; wartość to liczba
+            pikseli
+          </li>
+          <li>
+            <strong>height:</strong> określa wysokość wideo; wartość to liczba
+            pikseli
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ========== Menu ========== -->
+    <div class="menu-container">
+      <input type="checkbox" id="burger-toggle" />
+      <label for="burger-toggle" class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+      <div class="menu">
+        <div class="menu-inner">
+          <ul class="menu-nav">
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="../../index.html">
+                <span>
+                  <div>Główna</div>
+                </span>
+              </a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="./video.html">
+                <span>
+                  <div>Wideo</div>
+                </span>
+              </a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="./audio.html">
+                <span>
+                  <div>Audio</div>
+                </span>
+              </a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="./graphics.html">
+                <span>
+                  <div>Grafika</div>
+                </span>
+              </a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="./maps.html">
+                <span>
+                  <div>Mapy</div>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div class="gallery">
+            <div class="title">
+              <hr />
+            </div>
+            <div class="images">
+              <a class="image-link" href="../../index.html">
+                <div class="image" data-label="Główna">
+                  <img
+                    src="../media/images/menu-pictures/Home.jpg"
+                    alt="Główna - Obraz"
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="./wideo.html">
+                <div class="image" data-label="Wideo">
+                  <img
+                    src="../media/images/menu-pictures/Video.jpg"
+                    alt="Wideo - Obraz"
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="./audio.html">
+                <div class="image" data-label="Audio">
+                  <img
+                    src="../media/images/menu-pictures/Audio.jpg"
+                    alt="Audio - Obraz"
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="./graphics.html">
+                <div class="image" data-label="Grafika">
+                  <img
+                    src="../media/images/menu-pictures/Graphics.png"
+                    alt="Grafika - Obraz"
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="./maps.html">
+                <div class="image" data-label="Mapy">
+                  <img
+                    src="../media/images/menu-pictures/Maps.jpg"
+                    alt="Mapy - Obraz"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Stanisław Szymczykowski - Osadzanie multimediów na stronach
+        internetowych
+      </p>
+    </footer>
+  </body>
+</html>

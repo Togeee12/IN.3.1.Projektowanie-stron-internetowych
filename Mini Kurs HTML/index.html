@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MiniKurs HTML5 I CSS3 - Stanisław Szymczykowski 3G</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./assets/styles/index/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Link favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/html5logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="layout has-sidebar fixed-sidebar fixed-header">
+      <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+        <a id="btn-collapse" class="sidebar-collapser"
+          ><i class="fas fa-arrow-right"></i
+        ></a>
+        <div class="sidebar-layout">
+          <div class="sidebar-header">
+            <div class="pro-sidebar-logo">
+              <div>
+                <i class="fa fa-html5" aria-hidden="true"></i>
+              </div>
+              <h5>
+                <a href="./index.html">
+                  MiniKurs -
+                  <i class="fa fa-html5" aria-hidden="true">
+                    <i class="fa fa-css3" aria-hidden="true"></i></i
+                ></a>
+              </h5>
+            </div>
+          </div>
+          <div class="sidebar-content">
+            <nav class="menu open-current-submenu">
+              <ul>
+                <li class="menu-header"><span> PROJEKTY </span></li>
+                <!-- Sprawdzian -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-pen-ruler"></i>
+                    </span>
+                    <span class="menu-title">Sprawdzian</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Sprawdzian - Nowe Okno"
+                          target="_blank"
+                          href="./assets/pages-elements/sprawdzian/Sprawdzian Stanisław Szymczykowski 3g.html"
+                        >
+                          <span class="menu-title">Nowe Okno</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Sprawdzian - Okno w środku"
+                          href="./assets/pages/sprawdzian.html"
+                        >
+                          <span class="menu-title">Okno w środku</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Listy -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-list"></i>
+                    </span>
+                    <span class="menu-title">Listy</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Listy - Nowe Okno"
+                          target="_blank"
+                          href="./assets/pages-elements/lista/index.html"
+                        >
+                          <span class="menu-title">Nowe Okno</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Listy - Okno w środku"
+                          href="./assets/pages/listy.html"
+                        >
+                          <span class="menu-title">Okno w środku</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Tabele -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-table-cells"></i>
+                    </span>
+                    <span class="menu-title">Tabele</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Tabele - Nowe Okno"
+                          target="_blank"
+                          href="./assets/pages-elements/tabele/index.html"
+                        >
+                          <span class="menu-title">Nowe Okno</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Tabele - Okno w środku"
+                          href="./assets/pages/tabele.html"
+                        >
+                          <span class="menu-title">Okno w środku</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Tabele listy łącza -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-link"></i>
+                    </span>
+                    <span class="menu-title">Tabele, listy, łącza</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Table, listy, łącza - Nowe Okno"
+                          target="_blank"
+                          href="./assets/pages-elements/tabele_listy_lacza/index.html"
+                        >
+                          <span class="menu-title">Nowe Okno</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Tabele, listy, łącza - Okno w środku"
+                          href="./assets/pages/tabele-listy-lacza.html"
+                        >
+                          <span class="menu-title">Okno w środku</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Formularze -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-inbox"></i>
+                    </span>
+                    <span class="menu-title">Formularze</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Formularze 1 - Okno w środku"
+                          href="./assets/pages/formularze1.html"
+                        >
+                          <span class="menu-title">Formularze 1</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Formularze 2 - Okno w środku"
+                          href="./assets/pages/formularze2.html"
+                        >
+                          <span class="menu-title">Formularze 2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Multimedia -->
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span class="menu-title">Multimedia</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a
+                          title="Multimedia - Nowe Okno"
+                          target="_blank"
+                          href="./assets/pages-elements/multimedia v2/index.html"
+                        >
+                          <span class="menu-title">Nowe Okno</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          title="Multimedia - Okno w środku"
+                          href="./assets/pages/multimedia.html"
+                        >
+                          <span class="menu-title">Okno w środku</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <!-- ========================== -->
+                <li class="menu-header" style="padding-top: 20px">
+                  <span> INNE </span>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="fas fa-question"></i>
+                    </span>
+                    <span class="menu-title">Ciekawostki</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./assets/pages/linki-lista.html">
+                    <span class="menu-icon">
+                      <i class="fas fa-anchor"></i>
+                    </span>
+                    <span class="menu-title">Linki</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./assets/pages/kontakt.html">
+                    <span class="menu-icon">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="menu-title">Kontakt</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sidebar-footer">
+            <div class="footer-box">
+              <div style="padding: 0 10px">
+                <span style="display: block; margin-bottom: 10px"
+                  >Zobacz także strony moich innych kolegów!
+                </span>
+                <div style="margin-bottom: 15px">
+                  <a href="">
+                    <i class="fas fa-paperclip"></i>
+                    <span>Tymon Wilczek</span>
+                  </a>
+                </div>
+                <div style="margin-bottom: 5px">
+                  <a href="">
+                    <i class="fas fa-paperclip"></i>
+                    <span>Patryk Skrzypczak</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- Strona  -->
+      <div id="overlay" class="overlay"></div>
+      <div class="layout">
+        <main class="content">
+          <div class="container">
+            <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
+              <i class="fas fa-bars"></i>
+            </a>
+            <h1>MiniKurs HTML 5 i CSS 3 - Stanisław Szymczykowski 3G</h1>
+            <span>
+              Witaj w mini kursie HTML5 i CSS3! Ten kurs wprowadzi Cię w
+              podstawy tworzenia stron internetowych przy użyciu najnowszych
+              standardów HTML5 i CSS3. Odkryjemy, jak używać HTML5 do
+              definiowania struktury i zawartości strony, a także jak
+              wykorzystać CSS3 do nadawania jej atrakcyjnego wyglądu. Przygotuj
+              się na praktyczne ćwiczenia i naukę, która pozwoli Ci zacząć
+              tworzyć swoje własne strony internetowe!
+            </span>
+            <br />
+          </div>
+          <div class="container">
+            <div class="html-info-container">
+              <h2>Czym jest HTML?</h2>
+              <div class="info-video">
+                <video src="./assets/video/kurs-html.mp4" controls></video>
+                <div class="text-video">
+                  To wideo zostało stworzone przez
+                  <a href="https://www.youtube.com/@Pasjainformatyki"
+                    >Mirosława Zelenta</a
+                  >. Pełny artykuł o HTML znajdziesz
+                  <a href="http://miroslawzelent.pl/kurs-html/">tutaj</a>, a
+                  pełną serię video
+                  <a
+                    href="https://youtube.com/playlist?list=PLa_qAIEJBI00FKOQegmfv8D2SXd6v3ABh"
+                    >tutaj</a
+                  >.
+                </div>
+              </div>
+              <p>
+                HTML (HyperText Markup Language) to język znaczników używany do
+                tworzenia stron internetowych. Jest to podstawowy budulec, na
+                którym opiera się struktura i zawartość witryn internetowych.
+                HTML składa się z zestawu znaczników, które definiują elementy
+                strony, takie jak nagłówki, paragrafy, listy, linki, obrazy i
+                wiele innych. HTML jest językiem opisowym, który informuje
+                przeglądarkę internetową o sposobie prezentacji i organizacji
+                treści na stronie. Znaczniki HTML są otwierane za pomocą
+                nawiasów ostrych (&LT; &GT;) i mogą mieć atrybuty, które
+                określają dodatkowe właściwości danego elementu. Na przykład,
+                znacznik `&LT;img /&GT;` jest używany do wstawiania obrazów na
+                stronie i może mieć atrybuty takie jak "src" (określający źródło
+                obrazu) i "alt" (określający alternatywny tekst, który jest
+                wyświetlany, gdy obraz nie może zostać załadowany). Przeglądarki
+                internetowe interpretują kod HTML i renderują go jako widoczną
+                stronę dla użytkownika. Oprócz samego tekstu i multimediów, HTML
+                umożliwia również tworzenie linków do innych stron, tworzenie
+                formularzy, tabel i innych elementów interaktywnych. Wraz z CSS
+                (Cascading Style Sheets) i JavaScript, HTML stanowi podstawową
+                trójkę technologii używanych do tworzenia dynamicznych i
+                interaktywnych stron internetowych. CSS odpowiada za stylowanie
+                strony, podczas gdy JavaScript umożliwia dodawanie
+                interaktywności i reakcji na działania użytkownika. W skrócie,
+                HTML jest językiem znaczników używanym do tworzenia struktur i
+                treści stron internetowych, które są wyświetlane w
+                przeglądarkach internetowych.
+              </p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="html-info-container">
+              <h2>Czym jest CSS?</h2>
+              <div class="info-video">
+                <video src="./assets/video/kurs-css.mp4" controls></video>
+                <div class="text-video">
+                  To wideo zostało stworzone przez
+                  <a href="https://www.youtube.com/@Pasjainformatyki"
+                    >Mirosława Zelenta</a
+                  >. Pełny artykuł o CSS znajdziesz
+                  <a href="http://miroslawzelent.pl/kurs-css/">tutaj</a>, a
+                  pełną serię video
+                  <a
+                    href="https://youtube.com/playlist?list=PLOYHgt8dIdow6b2Qm3aTJbKT2BPo5iybv"
+                    >tutaj</a
+                  >.
+                </div>
+              </div>
+              <p>
+                CSS (Cascading Style Sheets) to język używany do opisu wyglądu i
+                stylizacji dokumentów HTML. Jest to technologia, która umożliwia
+                tworzenie atrakcyjnych i spójnych projektów graficznych dla
+                stron internetowych. CSS oddziela prezentację strony od jej
+                struktury. Za pomocą CSS możemy definiować różne właściwości,
+                takie jak kolory, czcionki, marginesy, paddingi, tła, rozmiary
+                elementów itp. Wprowadza również możliwość tworzenia efektów
+                animacyjnych, transformacji i przejść między stanami elementów
+                strony. CSS działa na zasadzie kaskadowości, co oznacza, że
+                można zdefiniować reguły stylizacji na różnych poziomach. Style
+                mogą być definiowane zarówno wewnątrz dokumentu HTML (wewnątrz
+                tagu `&LT;style&gt;`), jak i w zewnętrznym pliku CSS, który jest
+                dołączany do strony. CSS pozwala również na tworzenie
+                selektorów, które umożliwiają precyzyjne określanie, które
+                elementy strony mają być stylizowane. Można wybierać elementy na
+                podstawie ich typu, identyfikatora, klasy, hierarchii i innych
+                atrybutów. W połączeniu z HTML i JavaScript, CSS stanowi trzon
+                technologii używanych do tworzenia stron internetowych. HTML
+                odpowiada za strukturę strony, CSS za jej stylizację, a
+                JavaScript za interaktywność i dynamikę. W skrócie, CSS to język
+                używany do określania wyglądu i stylizacji stron internetowych.
+                Pozwala na separację prezentacji od struktury dokumentu HTML, co
+                umożliwia tworzenie atrakcyjnych i spójnych projektów
+                graficznych.
+              </p>
+            </div>
+          </div>
+          <!-- Slider z pracami -->
+          <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">26 December 2019</span>
+                  <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                  <div class="blog-slider__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae voluptate repellendus magni illo ea animi?
+                  </div>
+                  <a href="#" class="blog-slider__button">READ MORE</a>
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">24 października 2022</span>
+                  <div class="blog-slider__title">Sprawdzian</div>
+                  <div class="blog-slider__text">
+                    Sprawdzian to projekt przedstawiający podstawowe
+                    formatowanie tekstu przy użyciu HTML.
+                  </div>
+                  <a href="#" class="blog-slider__button">Czytaj więcej</a>
+                </div>
+              </div>
+
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">26 December 2019</span>
+                  <div class="blog-slider__title">Tabela z kolorami</div>
+                  <div class="blog-slider__text">
+                    Tabla z kolorami to projekt, który ma na celu w przejrzysty
+                    sposób przedstawić tworzenie i działanie tabel przy użyciu
+                    HTML.
+                  </div>
+                  <a href="#" class="blog-slider__button">Czytaj więcej</a>
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">26 December 2019</span>
+                  <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                  <div class="blog-slider__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae voluptate repellendus magni illo ea animi?
+                  </div>
+                  <a href="#" class="blog-slider__button">READ MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-slider__pagination"></div>
+          </div>
+          <!-- Footer -->
+          <footer class="footer">
+            <a target="_blank" href="https://github.com/togeee12">
+              Stanisław Szymczykowski 3G
+            </a>
+          </footer>
+        </main>
+        <div class="overlay"></div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c7f642db95.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import "../menu.css";
+
+:root {
+  --primary: #094b65;
+}
+* {
+  list-style: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../../../img/oferty/grecja-background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  color: #eee;
+}
+
+/* Warunki wyjazdu */
+.wyjazd {
+  background-color: #f5f5f5;
+  color: var(--primary);
+  margin: 40px;
+  border-radius: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+.down-arrow {
+  margin: 10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--primary);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.down-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+li {
+  position: relative;
+}
+.hidden {
+  width: 90%;
+  padding: 0;
+  margin: auto;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.active {
+  padding: 10px;
+  visibility: visible;
+  height: auto;
+  overflow: none;
+  opacity: 1;
+}
+
+/* Szybki opis */
+.szybki-opis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px;
+  padding: 10px;
+  font-weight: 600;
+}
+.lewo {
+  margin-right: 10px;
+  background-color: #f5f5f5;
+  color: var(--primary);
+  border-radius: 20px;
+  padding: 20px;
+  width: auto;
+}
+
+.prawo {
+  background-color: #f5f5f5;
+  color: var(--primary);
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 20%;
+  width: auto;
+}
+
+/* Najlepsze kierunki */
+.najlepsze-kierunki {
+  text-align: center;
+}
+
+.tile {
+  background-color: #eee;
+  display: inline-block;
+  color: var(--primary);
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: top;
+}
+
+.tile img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tile h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tile p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.tile p span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Opis długi */
+.opis-dlugi {
+  margin: 40px;
+  background-color: #eee;
+  border-radius: 20px;
+  color: var(--primary);
+  padding: 10px 20px;
+}
+
+.opis-dlugi h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.opis-dlugi p {
+  text-align: left;
+}

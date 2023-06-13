@@ -1,0 +1,36 @@
+@import "../menu/menu.css";
+body {
+  margin: 0;
+  padding: 0;
+}
+body .container {
+  margin: 0 auto;
+}
+body .container iframe {
+  width: 150vh;
+  height: 90vh;
+}
+
+.title-frame {
+  display: flex;
+  width: 150vh;
+  padding: 10px;
+}
+.title-frame button {
+  padding: 0px 15px;
+  background-color: #3990ff;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.4s;
+  font-size: 1.2rem;
+}
+.title-frame button:hover {
+  background-color: #273fb2;
+  cursor: pointer;
+}
+.title-frame h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 0 auto;
+}/*# sourceMappingURL=listy.css.map */

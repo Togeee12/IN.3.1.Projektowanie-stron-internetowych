@@ -1,0 +1,92 @@
+@import "../menu/menu.css";
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.container .box {
+  flex: 1;
+  margin: 20px;
+  background-color: #fff;
+  color: #000000;
+  padding: 20px;
+  border-radius: 25px;
+}
+.container .box h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+.container .box a {
+  color: #000000;
+}
+.container .box a:hover {
+  cursor: pointer;
+}
+.container .box p {
+  color: #000000;
+  font-size: 1rem;
+}
+.container .box p span {
+  font-weight: 600;
+}
+.container .box label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+.container .box input[type=text],
+.container .box input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #555;
+}
+.container .box input[type=text]:focus,
+.container .box input[type=email]:focus {
+  border-color: #999;
+}
+.container .box button[type=submit] {
+  margin: 0 auto;
+  background-color: #1d4981;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 auto;
+  display: block;
+}
+.container .box button[type=submit]:hover {
+  background-color: #478fee;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map iframe {
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.droga-szkola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.droga-szkola a {
+  font-size: 1.4rem;
+}
+.droga-szkola a:hover {
+  color: #478fee;
+  cursor: pointer;
+}/*# sourceMappingURL=kontakt.css.map */
