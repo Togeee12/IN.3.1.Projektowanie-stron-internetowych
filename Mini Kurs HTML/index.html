@@ -12,6 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
     />
     <link rel="stylesheet" href="./assets/styles/index/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
     <!-- Link favicon -->
     <link
       rel="shortcut icon"
@@ -238,7 +244,7 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">
+                  <a href="./assets/pages/linki-lista.html">
                     <span class="menu-icon">
                       <i class="fas fa-anchor"></i>
                     </span>
@@ -393,8 +399,82 @@
               </p>
             </div>
           </div>
-          <!-- Video gallery -->
-          <div class="video-container"></div>
+          <!-- Slider z pracami -->
+          <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">26 December 2019</span>
+                  <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                  <div class="blog-slider__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae voluptate repellendus magni illo ea animi?
+                  </div>
+                  <a href="#" class="blog-slider__button">READ MORE</a>
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">24 października 2022</span>
+                  <div class="blog-slider__title">Sprawdzian</div>
+                  <div class="blog-slider__text">
+                    Sprawdzian to projekt przedstawiający podstawowe
+                    formatowanie tekstu przy użyciu HTML.
+                  </div>
+                  <a href="#" class="blog-slider__button">Czytaj więcej</a>
+                </div>
+              </div>
+
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">26 December 2019</span>
+                  <div class="blog-slider__title">Tabela z kolorami</div>
+                  <div class="blog-slider__text">
+                    Tabla z kolorami to projekt, który ma na celu w przejrzysty
+                    sposób przedstawić tworzenie i działanie tabel przy użyciu
+                    HTML.
+                  </div>
+                  <a href="#" class="blog-slider__button">Czytaj więcej</a>
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">26 December 2019</span>
+                  <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                  <div class="blog-slider__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae voluptate repellendus magni illo ea animi?
+                  </div>
+                  <a href="#" class="blog-slider__button">READ MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-slider__pagination"></div>
+          </div>
           <!-- Footer -->
           <footer class="footer">
             <a target="_blank" href="https://github.com/togeee12">
@@ -407,6 +487,9 @@
     </div>
     <!-- Script -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
     <script src="./assets/scripts/index.js"></script>
     <script
       src="https://kit.fontawesome.com/c7f642db95.js"
